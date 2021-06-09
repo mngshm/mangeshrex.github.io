@@ -1,5 +1,5 @@
 /* Iporting fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 /* Color Variables*/
@@ -39,11 +39,13 @@ html {
 
 body {
     /*overflow cant be changed on body. since this type of styling is not for the body tag.*/
+    font-family: 'Oxanium', cursive;
     max-width: 1000px;
     margin: 0;
     margin-left: 200px;
     padding: 10px;
     background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,1));
+    font-size: 18px;
 }
 
 
