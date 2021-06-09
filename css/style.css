@@ -1,4 +1,8 @@
-/* Iporting fonts */
+/*
+ * Css for the website
+ */
+
+/* Importing the fonts */
 @import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
@@ -42,10 +46,12 @@ body {
     font-family: 'Oxanium', cursive;
     max-width: 1000px;
     margin: 0;
+    text-align: 100px;
+    font-weight: bold;
     margin-left: 200px;
     padding: 10px;
     background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,1));
-    font-size: 18px;
+    font-size: 20px;
 }
 
 
@@ -113,7 +119,7 @@ article h2{
 
 article p{
     line-height: 1.6em;
-    font-size: 1em;
+    font-size: 1.3em;
     color: ;
     font-family: 'Josefin Sans',sans-serif;
 }
@@ -146,3 +152,6 @@ article ul{
     list-style-type: none;
 }
 
+article li{
+
+}
