@@ -1,58 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="UTF-8">
-      <meta name="description" content="My Portfolio">
-      <meta name="keywords" content="Mangeshrex, mangeshrex, HTML, CSS">
-      <meta name="author" content="Mangeshrex">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mangeshrex's Homepage</title>
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <h1>
-        <big>こんにちは、マンゲッシュです</big>
-      </h1>
-    </header>
-    <section>
-      <article class="neofetch">
-        <h2>[rex@toyko ~ ]$ neofetch</h2>
-        <div id="details">
-          <figure>
-            <img src="img/rex.jpg" id="avatar" alt="o.O" width="300px">
-        </figure>
-          <ul>
-            <li><label>rex@tokyo</label></li>
-            <li>-------------</li>
-            <li><label>Name</label>: Mangesh</li>
-            <li><label>D.O.B</label>: 14/12/2004</li>
-            <li><label>Distro</label>: Arch</li>
-            <li><label>Religion</label>: GNU</li>
-            <li><label>Gender</label>: Male</li>
-            <li><label>Address</label>: ~/</li>
-            <li><label>Education</label>: High School</li>
-            <li><label>Country</label>: India</li>
-            <li><label>Reddit</label>: reddit.com/u/rex1090x</li>
-            <li><label>Youtube</label>: <a href="https://www.youtube.com/channel/UCcZ3xs9mtngfdWWKgwQYL_A">Mangeshrex</a></a></li>
-            <li><label>Github</label>: <a href="https://github.com/Mangeshrex">Mangeshrex</a></li>
-          </ul>
-        </div>
-      </article>
-    </section
-    <h2>[rex@tokyo~ ]$ cat about.txt</h2>
-    <section>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300&display=swap" rel="stylesheet">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Web Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <meta name="My Minimal Personal Portfolio Website" content="Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    </head>
 
-      <article>
-        <p>I am a 15 year old Linux Enthusiast and I like to learn new things. So, I would like to interject for a moment what you're referring to as linux is in fact gnu/linux. No, Richard, it's 'Linux', not 'GNU/Linux'. The most important contributions that the FSF made to Linux were the creation of the GPL and the GCC compiler. Those are fine and inspired products. GCC is a monumental achievement and has earned you, RMS, and the Free Software Foundation countless kudos and much appreciation.</p>
-        </article>
-        <figure>
-            <img src="img/apu.jpeg" alt="May May" width="300px">
-        </figure>
-    </section>
-    <footer>
-      <p> made with ❤ </p>
-    </footer>
-  </body>
+    <h1 align="center"> $(whoami) </h1>
+    <body style="background-color: #0f1315">
+        <div class="container">
+            <img src="img/rex.png" alt="My Internet Avatar" class="img-thumbnail rounded" align="right"/>
+            <blockquote class="blackquote-reversed"> <p>こんにちわ, Mangesh here. I am a 15 year old (16 soon) Programmer/geek from India trying to learn
+              various things at various times. I mostly spend my time making some noobish kind of stuff. I know a bit of C, Golang, Vimscript and some bootstrap. 
+              I am not a professional programmer or dev so you wont find any Epic stuff in mine. In my free time I mostly Rice my System or make Youtube Videos. I use Void Linux + Arch Linux as my daily driver's, But I think I like Void Linux more
+              私はこの5ヶ月間、日本語を学んでいますが、これからもずっと続けていきます。それは私の夢のようなものです(笑)。I don't  have any bigger projects but you may like the one which exist.
+            </p>
+            </blockquote>
+          <!-- The table thing starts from here -->
+          <h2 align="center">My Stuff</h2>
+          <table class="table table-hover table-bordered ">
+              <thead>
+                  <tr>
+                      <th>Projects</th>
+                      <th>Information</th>
+                      <th>Source</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                      <td>Rxfetch</td>
+                      <td>A funny and minimal system information fetching tool.</td>
+                      <td><a href="https://github.com/Mangeshrex/rxfetch">Rxfetch</a></td>
+                  </tr>
+                  <tr>
+                      <td>UwU</td>
+                      <td>A dark and independent vim colorscheme + project</td>
+                      <td><a href="https://github.com/Mangeshrex/uwu.vim">UwU</a></td>
+                  </tr>
+                  <tr>
+                      <td>Dotfiles</td>
+                      <td>A Repo of my Window Manager Dotfiles.</td>
+                      <td><a href="https://github.com/Mangeshrex/dotfiles">Dots</a></td>
+                  </tr>
+              </thead>
+              </tbody>
+          </table>
+          <h3 align="center">Follow me On</h3>
+          <center>  <a  href="https://github.com/mangeshrex/"><i  class="fa fa-github"></i></a> <a  href="https://youtube.com/c/Mangeshrex"><i  class="fa fa-youtube-play"></i></a>
+            <a  href="https://reddit.com/u/rex1090x"><i class="fa fa-reddit"></i></a> <a href="https://t.me/mangeshrex"><i class="fa fa-telegram"></i>
+            </center>
+            <div class="container>"></div>
+        </div>
+    </body>
 </html>

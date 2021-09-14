@@ -1,157 +1,101 @@
-/*
- * Css for the website
- */
+/* Style for Website Portfolio 
+   Font Import
+   */ 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+h1 {
+    font-family: 'DotGothic16', monospace;
+    font-weight: 500; 
+    line-height: 1.2;
+    color:#e74c4c ;
+    padding-top: 19px;
+    overflow: hidden; 
+    border-right: .15em solid #5b98a9; 
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .15em;
+    animation: 
+      typing 2s steps(40, end),
+      blink-caret .75s step-end infinite; 
+} 
 
-/* Importing the fonts */
-@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
-/* Color Variables*/
-
-:root {
-    --color0: blue;
-    --color1: #e06c75;
-    --color2: #98c379;
-    --color3: #e5c07b;
-    --color4: #61afef;
-    --color5: #9a7ecc;
-    --color6: #56b6c2;
-    --color7: #abb2bf;
-    --color8: #abb2bf;
-    --color9: #393e48;
-    --color10: #e06c75;
-    --color11: #98c379;
-    --color12: #e5c07b;
-    --color13: #61afef;
-    --color14: #9a7ecc;
-    --color15: #56b6c2;
-    --color256: #1e222a;
-    --color257: #abb2bf;
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 30%; } 
 }
 
-/* Global styles */
-
-html {
-    background: url(../img/keeb.png) repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: #abb2bf;
-    font-size: 18px;
+/* The cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #5b98a9; }
 }
 
-body {
-    /*overflow cant be changed on body. since this type of styling is not for the body tag.*/
-    font-family: 'Oxanium', cursive;
-    max-width: 1000px;
-    margin: 0;
-    text-align: 100px;
-    font-weight: bold;
-    margin-left: 200px;
-    padding: 10px;
-    background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,1));
-    font-size: 20px;
+h2 { 
+    margin-bottom: 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.2;
+    color:  #c4c4c4;
 }
 
-
-/* Header */
-header h1{
-    text-align: center;
-    line-height: 1.2em;
+h3 { 
+    font-family: 'JetBrains Mono', monospace;
+    color: #c4c4c4;
+    margin-bottom: 1%;
+    padding-top: 5px;
 }
 
-/* Navbar */
-
-nav{
-    margin: 5px;
+h4{ 
+    font-family: 'Noto Sans SC', sans-serif;
+    color: #C5C8C9;
+    margin-bottom: 1%;
+    font-size:inherit;
 }
 
-nav ul{
-    font-family: 'Josefin Sans', sans-serif;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
+blockquote { 
+    font-family: 'Noto Sans SC', sans-serif; 
+    color: #c4c4c4; 
+    margin-left: 15%;
+    margin-right: 10%;
+    margin-top: 2%;
 }
 
-nav a{
-    color: lightblue;
-    text-decoration: none;
-    text-transform: uppercase;
+thead { 
+    font-family: 'Noto Sans SC', sans-serif; 
+    color: #C5C8C9; 
+    margin-right: 50%;
 }
 
-nav a:hover{
-    color: var(--color5);
-    background-color: white;
-    text-decoration: underline;
+center { 
+    font-size: 50px;
 }
 
-/* Sections */
-section{
-    padding: 5px;
-    margin: 5px;
-    display: flex;
+tbody { 
+    font-family: 'Noto Sans SC', sans-serif; 
+    color: #C5C8C9; 
+    margin-right: 50%;
+    width: 30px;
 }
 
-
-/* Footer */
-footer {
-    font-size: 0.8em;
-    text-align: center;
-    font-family: 'Josefin Sans',sans-serif;
-    color: white;
+img { 
+    margin-right: 15%; 
+    margin-bottom: 5%;
+    margin-left: 5%;
 }
 
-
-/* Section Components */
-
-article{
-    margin: 5px;
-    padding: 5px;
-    font-size: 14px;
+tr { 
+    color: #C5C8C9;
+    width: 10px;
 }
 
-article h2{
-    font-family: 'Josefin Sans',sans-serif;
+table { 
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
-article p{
-    line-height: 1.6em;
-    font-size: 1.3em;
-    color: ;
-    font-family: 'Josefin Sans',sans-serif;
-}
-
-article figure{
-    margin: 5px;
-}
-
-.neofetch{
-    font-family: 'Josefin Sans',sans-serif;
-}
-
-#details{
-    font-size: 16px;
-    line-height: 1.4em;
-    display: flex;
-}
-
-.neofetch label{
-    color: #CF5758;
-    font-weight: bolder;
-    font-family: 'Josefin Sans',sans-serif;
-}
-
-article ul{
-    font-family: 'Josefin Sans',sans-serif;
-    padding: 0;
-    margin: 0;
-    margin-left: 15px;
-    list-style-type: none;
-}
-
-article li{
-
+td { 
+    width: 50px;
 }
