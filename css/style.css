@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Style for Website Portfolio 
    Font Import
    */ 
@@ -99,3 +100,162 @@ table {
 td { 
     width: 50px;
 }
+=======
+/*
+ * Css for the website
+ */
+
+/* Importing the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+/* Color Variables*/
+
+:root {
+    --color0: blue;
+    --color1: #e06c75;
+    --color2: #98c379;
+    --color3: #e5c07b;
+    --color4: #61afef;
+    --color5: #9a7ecc;
+    --color6: #56b6c2;
+    --color7: #abb2bf;
+    --color8: #abb2bf;
+    --color9: #393e48;
+    --color10: #e06c75;
+    --color11: #98c379;
+    --color12: #e5c07b;
+    --color13: #61afef;
+    --color14: #9a7ecc;
+    --color15: #56b6c2;
+    --color256: #1e222a;
+    --color257: #abb2bf;
+}
+
+/* Global styles */
+
+html {
+    background: url(../img/keeb.png) repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #abb2bf;
+    font-size: 18px;
+}
+
+body {
+    /*overflow cant be changed on body. since this type of styling is not for the body tag.*/
+    font-family: 'Oxanium', cursive;
+    max-width: 1000px;
+    margin: 0;
+    text-align: 100px;
+    font-weight: bold;
+    margin-left: 100px;
+    padding: 10px;
+    background: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,1));
+    font-size: 20px;
+}
+
+
+/* Header */
+header h1{
+    text-align: center;
+    line-height: 1.2em;
+}
+
+/* Navbar */
+
+nav{
+    margin: 5px;
+}
+
+nav ul{
+    font-family: 'Josefin Sans', sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    color: lightblue;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    color: var(--color5);
+    background-color: white;
+    text-decoration: underline;
+}
+
+/* Sections */
+section{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+}
+
+
+/* Footer */
+footer {
+    font-size: 0.8em;
+    text-align: center;
+    font-family: 'Josefin Sans',sans-serif;
+    color: white;
+}
+
+
+/* Section Components */
+
+article{
+    margin: 5px;
+    padding: 5px;
+    font-size: 14px;
+}
+
+article h2{
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+article p{
+    line-height: 1.6em;
+    font-size: 1.3em;
+    color: ;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+article figure{
+    margin: 5px;
+}
+
+.neofetch{
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+#details{
+    font-size: 16px;
+    line-height: 1.4em;
+    display: flex;
+}
+
+.neofetch label{
+    color: #CF5758;
+    font-weight: bolder;
+    font-family: 'Josefin Sans',sans-serif;
+}
+
+article ul{
+    font-family: 'Josefin Sans',sans-serif;
+    padding: 0;
+    margin: 0;
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+article li{
+
+}
+>>>>>>> 6c26dc3a3a8b547f682395c003dd26082ea0793b
