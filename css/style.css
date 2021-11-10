@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #16161e;
+    background-color: #13a1c;
 }
 
 @font-face {
@@ -70,7 +70,7 @@ body{
 .foo{
     margin: 20px;
     padding: 30px;
-    background-color: #1a1b26;
+    background-color: #1b2224;
     color: #f7768e;
     border-radius: 1em;
     font-family: JetBrainsMono, monospace, sans-serif;
@@ -81,7 +81,7 @@ body{
 .bar{
     margin: 20px;
     padding: 30px;
-    background-color: #1a1b26;
+    background-color: #1b2224;
     color: #bb9af7;
     border-radius: 1em;
     font-family: JetBrainsMono, monospace, sans-serif;
