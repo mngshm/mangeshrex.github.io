@@ -1,102 +1,99 @@
-/* Style for Website Portfolio 
-   Font Import
-   */ 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
-
-h1 {
-    font-family: 'DotGothic16', monospace;
-    font-weight: 500; 
-    line-height: 1.2;
-    color:#e74c4c ;
-    padding-top: 19px;
-    overflow: hidden; 
-    border-right: .15em solid #5b98a9; 
-    white-space: nowrap; 
-    margin: 0 auto; 
-    letter-spacing: .15em;
-    animation: 
-      typing 2s steps(40, end),
-      blink-caret .75s step-end infinite; 
-} 
-
-
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 30%; } 
+/* very badly written css? :)) */
+*{
+    margin: 0;
+    padding: 0;
 }
 
-/* The cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: #5b98a9; }
+body{
+    background-color: #16161e;
 }
 
-h2 { 
-    margin-bottom: 0.5rem;
-    font-family: 'JetBrains Mono', monospace;
-    line-height: 1.2;
-    color:  #c4c4c4;
+@font-face {
+    font-family: JetBrainsMono;
+    src: url(../assets/fonts/ttf/JetBrainsMono-ExtraLight.ttf);
+}   
+
+.clr{
+    clear: both;
 }
 
-h3 { 
-    font-family: 'JetBrains Mono', monospace;
-    color: #c4c4c4;
-    margin-bottom: 1%;
-    padding-top: 5px;
+#main-header {
+    height: 240px;
+    margin: 0px 0px 0px 0px;
+    background-color: #131a1c;
 }
 
-h4{ 
-    font-family: 'Noto Sans SC', sans-serif;
-    color: #C5C8C9;
-    margin-bottom: 1%;
-    font-size:inherit;
+#main-header img{
+    float: left;
+    margin: 20px;
+    height: 200px;
+    border-radius: 1em;
 }
 
-blockquote { 
-    font-family: 'Noto Sans SC', sans-serif; 
-    color: #c4c4c4; 
-    margin-left: 15%;
-    margin-right: 10%;
-    margin-top: 2%;
+#main-header div{
+    float: left;
+    color: #f7768e;
+    font-family: JetBrainsMono, monospace, sans-serif;
+    font-size: 28px;
+    margin: 20px 20px 0px 0px;
+    padding: 45px 10px;
+    border-radius: 1em;
 }
 
-thead { 
-    font-family: 'Noto Sans SC', sans-serif; 
-    color: #C5C8C9; 
-    margin-right: 50%;
+#navbar{
+    /* background-color: #2ac3de; */
+    font-family: JetBrainsMono, monospace, sans-serif;
 }
 
-center { 
-    font-size: 50px;
+#navbar ul{
+    list-style: none;
 }
 
-tbody { 
-    font-family: 'Noto Sans SC', sans-serif; 
-    color: #C5C8C9; 
-    margin-right: 50%;
-    width: 30px;
+#navbar li{
+    display: inline;
 }
 
-img { 
-    margin-right: 15%; 
-    margin-bottom: 5%;
-    margin-left: 5%;
+#navbar a{
+    text-decoration: none;
 }
 
-tr { 
-    color: #C5C8C9;
-    width: 10px;
+.nav-button{
+    /* position: absolute; */
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border-radius: 1em;
+    height: 50px;
+    background-color: #1b2224;
 }
 
-table { 
-    margin-left: 10px;
-    margin-right: 10px;
+.foo{
+    margin: 20px;
+    padding: 30px;
+    background-color: #1a1b26;
+    color: #f7768e;
+    border-radius: 1em;
+    font-family: JetBrainsMono, monospace, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6em;
 }
 
-td { 
-    width: 50px;
+.bar{
+    margin: 20px;
+    padding: 30px;
+    background-color: #1a1b26;
+    color: #bb9af7;
+    border-radius: 1em;
+    font-family: JetBrainsMono, monospace, sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+#main-footer{
+    /* text-align: center; */
+    font-family: JetBrainsMono, monospace, sans-serif;
+    font-size: 1em;
+    color: #c5c8f9;
+    padding: 10px;
+    margin: 20px;
 }
