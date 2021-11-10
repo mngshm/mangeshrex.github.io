@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #13a1c;
+    background-color: #131a1c;
 }
 
 @font-face {
@@ -71,7 +71,7 @@ body{
     margin: 20px;
     padding: 30px;
     background-color: #1b2224;
-    color: #f7768e;
+    color: #e74c4c;
     border-radius: 1em;
     font-family: JetBrainsMono, monospace, sans-serif;
     font-size: 1.2em;
@@ -82,7 +82,7 @@ body{
     margin: 20px;
     padding: 30px;
     background-color: #1b2224;
-    color: #bb9af7;
+    color: #6db0ad;
     border-radius: 1em;
     font-family: JetBrainsMono, monospace, sans-serif;
     font-size: 1.2em;
