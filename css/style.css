@@ -24,14 +24,14 @@ body{
 }
 
 #main-header img{
-    float: center;
+    float: left;
     margin: 20px;
     height: 200px;
     border-radius: 1em;
 }
 
 #main-header div{
-    float: left;
+    float: center;
     color: #CE5758;
     font-family: JetBrainsMono, monospace, sans-serif;
     font-size: 28px;
@@ -62,9 +62,10 @@ body{
     padding: 10px;
     margin-top: 20px;
     margin-left: 20px;
-    border-radius: 1em;
+    border-radius: 2em;
     height: 50px;
     background-color: #2f3945;
+    float: center;
 }
 
 .foo{
@@ -83,7 +84,7 @@ body{
     padding: 30px;
     background-color: #2f3945;
     color: #98B2D6 ;
-    border-radius: 1em;
+    border-radius: 3em;
     font-family: JetBrainsMono, monospace, sans-serif;
     font-size: 1.2em;
     line-height: 1.6em;
@@ -96,4 +97,5 @@ body{
     color: #c5c8f9;
     padding: 10px;
     margin: 20px;
+    text-align: center;    
 }
