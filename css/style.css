@@ -70,7 +70,7 @@ body{
 .foo{
     margin: 20px;
     padding: 30px;
-    background-color: #1b2224;
+    background-color: #2f3945;
     color: #C7A2D1;
     border-radius: 1em;
     font-family: JetBrainsMono, monospace, sans-serif;
@@ -81,7 +81,7 @@ body{
 .bar{
     margin: 20px;
     padding: 30px;
-    background-color: #1b2224;
+    background-color: #2f3945;
     color: #98B2D6 ;
     border-radius: 1em;
     font-family: JetBrainsMono, monospace, sans-serif;
