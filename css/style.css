@@ -24,7 +24,7 @@ body{
 }
 
 #main-header img{
-    float: left;
+    float: center;
     margin: 20px;
     height: 200px;
     border-radius: 1em;
