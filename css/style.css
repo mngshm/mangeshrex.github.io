@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #131a1c;
+    background-color: #202A36;
 }
 
 @font-face {
@@ -20,7 +20,7 @@ body{
 #main-header {
     height: 240px;
     margin: 0px 0px 0px 0px;
-    background-color: #131a1c;
+    background-color: #202A36;
 }
 
 #main-header img{
@@ -32,7 +32,7 @@ body{
 
 #main-header div{
     float: left;
-    color: #f7768e;
+    color: #CE5758;
     font-family: JetBrainsMono, monospace, sans-serif;
     font-size: 28px;
     margin: 20px 20px 0px 0px;
@@ -64,14 +64,14 @@ body{
     margin-left: 20px;
     border-radius: 1em;
     height: 50px;
-    background-color: #1b2224;
+    background-color: #2f3945;
 }
 
 .foo{
     margin: 20px;
     padding: 30px;
     background-color: #1b2224;
-    color: #e74c4c;
+    color: ##C7A2D1;
     border-radius: 1em;
     font-family: JetBrainsMono, monospace, sans-serif;
     font-size: 1.2em;
@@ -82,7 +82,7 @@ body{
     margin: 20px;
     padding: 30px;
     background-color: #1b2224;
-    color: #6db0ad;
+    color: #98B2D6 ;
     border-radius: 1em;
     font-family: JetBrainsMono, monospace, sans-serif;
     font-size: 1.2em;
