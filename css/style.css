@@ -24,13 +24,14 @@ body{
 }
 
 #main-header img{
+    float: left;
     margin: 20px;
     height: 200px;
     border-radius: 1em;
 }
 
 #main-header div{
-    float: center;
+    float: left;
     color: #CE5758;
     font-family: JetBrainsMono, monospace, sans-serif;
     font-size: 28px;
