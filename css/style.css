@@ -1,82 +1,82 @@
 /* very badly written css? :)) */
 *{
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body{
-    background-color: #202A36;
+	background-color: #202A36;
 }
 
 @font-face {
-    font-family: JetBrainsMono;
-    src: url(../assets/fonts/ttf/JetBrainsMono-ExtraLight.ttf);
+	font-family: JetBrainsMono;
+	src: url(../assets/fonts/ttf/JetBrainsMono-ExtraLight.ttf);
 }   
 
 .clr{
-    clear: both;
+	clear: both;
 }
 
 #main-header {
-    height: 240px;
-    margin: 0px 0px 0px 0px;
-    background-color: #202A36;
+	height: 240px;
+	margin: 0px 0px 0px 0px;
+	background-color: #202A36;
 }
 
 #main-header img{
-    float: left;
-    margin: 20px;
-    height: 200px;
-    border-radius: 1em;
+	float: left;
+	margin: 20px;
+	height: 200px;
+	border-radius: 1em;
 }
 
 #main-header div{
-    float: left;
-    color: #CE5758;
-    font-family: JetBrainsMono, monospace, sans-serif;
-    font-size: 28px;
-    margin: 20px 20px 0px 0px;
-    padding: 45px 15px;
-    border-radius: 1em;
+	float: left;
+	color: #CE5758;
+	font-family: JetBrainsMono, monospace, sans-serif;
+	font-size: 28px;
+	margin: 20px 20px 0px 0px;
+	padding: 45px 15px;
+	border-radius: 1em;
 }
 
 #navbar{
-    /* background-color: #2ac3de; */
-    font-family: JetBrainsMono, monospace, sans-serif;
+	/* background-color: #2ac3de; */
+	font-family: JetBrainsMono, monospace, sans-serif;
 }
 
 #navbar ul{
-    list-style: none;
+	list-style: none;
 }
 
 #navbar li{
-    display: inline;
+	display: inline;
 }
 
 #navbar a{
-    text-decoration: none;
+	text-decoration: none;
 }
 
 .nav-button{
-    /* position: absolute; */
-    padding: 10px;
-    margin-top: 20px;
-    margin-left: 20px;
-    border-radius: 2em;
-    height: 50px;
-    background-color: #2f3945;
-    float: center;
+	/* position: absolute; */
+	padding: 10px;
+	margin-top: 20px;
+	margin-left: 20px;
+	border-radius: 2em;
+	height: 50px;
+	background-color: #2f3945;
+	float: center;
 }
 
 .foo{
-    margin: 20px;
-    padding: 30px;
-    background-color: #2f3945;
-    color: #C7A2D1;
-    border-radius: 1em;
-    font-family: JetBrainsMono, monospace, sans-serif;
-    font-size: 1.2em;
-    line-height: 1.6em;
+	margin: 20px;
+	padding: 30px;
+	background-color: #2f3945;
+	color: #C7A2D1;
+	border-radius: 1em;
+	font-family: JetBrainsMono, monospace, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.6em;
 }
 
 .bar{
