@@ -5,7 +5,7 @@
 }
 
 body{
-	background-color: #202A36;
+	background-color: #16202c;
 }
 
 @font-face {
@@ -18,31 +18,34 @@ body{
 }
 
 #main-header {
-	height: 240px;
+	height: 300px;
 	margin: 0px 0px 0px 0px;
-	background-color: #202A36;
+	background-color: #16202c;
 }
 
 #main-header img{
-	float: left;
-	margin: 20px;
+	margin: 0px;
 	height: 200px;
-	border-radius: 1em;
+	border-radius: 7em;
 }
 
 #main-header div{
-	float: left;
 	color: #CE5758;
 	font-family: JetBrainsMono, monospace, sans-serif;
 	font-size: 28px;
-	margin: 20px 20px 0px 0px;
-	padding: 45px 15px;
+	margin: 10px 10px 0px 0px;
+	padding: 35px 10px;
 	border-radius: 1em;
 }
 
 #navbar{
 	/* background-color: #2ac3de; */
 	font-family: JetBrainsMono, monospace, sans-serif;
+	align-items: center;
+	margin-top: 20px;
+	margin-bottom: 100px;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
 #navbar ul{
@@ -61,11 +64,13 @@ body{
 	/* position: absolute; */
 	padding: 10px;
 	margin-top: 20px;
-	margin-left: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	border-radius: 2em;
-	height: 50px;
+	line-height: 60px;
+	font-size: 1.2em;
+	color: #DEE4DC;
 	background-color: #2f3945;
-	float: center;
 }
 
 .foo{
@@ -77,17 +82,30 @@ body{
 	font-family: JetBrainsMono, monospace, sans-serif;
 	font-size: 1.2em;
 	line-height: 1.6em;
+	margin-top: 250px;
+	margin-bottom: 250px;
 }
 
 .bar{
 	margin: 20px;
 	padding: 30px;
 	background-color: #2f3945;
-	color: #98B2D6;
+	color: #7CA6BB;
 	border-radius: 1em;
 	font-family: JetBrainsMono, monospace, sans-serif;
 	font-size: 1.2em;
 	line-height: 1.6em;
+}
+
+.project{
+	margin: 20px;
+	padding: 30px;
+	background-color: #2f3945;
+	color: #c5c8c9;
+	border-radius: 1em;
+	font-family: JetBrainsMono, monospace, sans-serif;
+	font-size: 1.2em;
+	line-height: 2em;
 }
 
 #main-footer{
