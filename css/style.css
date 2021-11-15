@@ -56,8 +56,9 @@ body{
 	display: inline;
 }
 
-#navbar a{
+#navbar a:hover{
 	text-decoration: none;
+	color: #8DD681;
 }
 
 .nav-button{
@@ -88,12 +89,13 @@ body{
 	margin: 20px;
 	padding: 30px;
 	background-color: #2f3945;
-	color: #d6d7da;
+	color: #d1d5db;
 	border-radius: 1em;
 	font-family: JetBrainsMono, monospace, sans-serif;
 	font-size: 1.2em;
 	line-height: 1.6em;
 }
+
 
 .project{
 	margin: 20px;
@@ -110,9 +112,8 @@ body{
 	/* text-align: center; */
 	font-family: JetBrainsMono, monospace, sans-serif;
 	font-size: 1em;
-	color: #c5c8f9;
+	color:#c5c8f9;
 	padding: 10px;
-	margin-left: 100px;
-	position: fixed;
-	top: 90%;
+	margin: 20px;
+	text-align: center;    
 }
