@@ -113,5 +113,7 @@ body{
 	color: #c5c8f9;
 	padding: 10px;
 	margin: 20px;
-	text-align: center;    
+	text-align: center;   
+	margin-top: 90%;
+	position: fixed;
 }
