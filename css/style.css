@@ -112,8 +112,7 @@ body{
 	font-size: 1em;
 	color: #c5c8f9;
 	padding: 10px;
-	margin: 20px;
-	text-align: center;   
-	margin-top: 90%;
+	margin-left: 100px;
 	position: fixed;
+	top: 90%;
 }
