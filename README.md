@@ -1,3 +1,3 @@
-# mangeshrex.github.io
+## Mangeshrex.me 
 
-My Minimal personal Portfolio website. (Desktop only for now)
+This is the repo of my Personal Portfolio website written in only HTML and CSS. 
