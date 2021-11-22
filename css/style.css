@@ -5,7 +5,7 @@
 }
 
 body{
-	background-color: #16202c;
+	background-color: #131a1c;
 }
 
 @font-face {
@@ -20,7 +20,7 @@ body{
 #main-header {
 	height: 300px;
 	margin: 0px 0px 0px 0px;
-	background-color: #16202c;
+	background-color: #131a1c;
 }
 
 #main-header img{
@@ -30,7 +30,7 @@ body{
 }
 
 #main-header div{
-	color: #CE5758;
+	color: #e74c4c;
 	font-family: JetBrainsMono, monospace, sans-serif;
 	font-size: 28px;
 	margin: 10px 10px 0px 0px;
@@ -57,8 +57,8 @@ body{
 }
 
 #navbar a:hover{
-	text-decoration: none;
-	color: #8DD681;
+	text-decoratio6db0adn: none;
+	color: #6bb05d;
 }
 
 .nav-button{
@@ -70,29 +70,29 @@ body{
 	border-radius: 2em;
 	line-height: 60px;
 	font-size: 1.2em;
-	color: #DEE4DC;
-	background-color: #2f3945;
+	color: #c5c8c9;
+	background-color: #2a3133;
 }
 
 .foo{
 	margin: 20px;
 	padding: 30px;
-	background-color: #2f3945;
-	color: #C7A2D1;
+	background-color: #2a3133;
+	color: #c5c8c9;
 	border-radius: 1em;
 	font-family: JetBrainsMono, monospace, sans-serif;
-	font-size: 1.2em;
-	line-height: 1.6em;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 .bar{
 	margin: 20px;
 	padding: 30px;
-	background-color: #2f3945;
-	color: #d1d5db;
+	background-color: #2a3133;
+	color: #c5c8c9;
 	border-radius: 1em;
 	font-family: JetBrainsMono, monospace, sans-serif;
-	font-size: 1.2em;
+	font-size: 1em;
 	line-height: 1.6em;
 }
 
@@ -100,12 +100,12 @@ body{
 .project{
 	margin: 20px;
 	padding: 30px;
-	background-color: #2f3945;
+	background-color:#2a3133;
 	color: #c5c8c9;
 	border-radius: 1em;
 	font-family: JetBrainsMono, monospace, sans-serif;
-	font-size: 1.2em;
-	line-height: 2em;
+	font-size: 1em;
+	line-height: 1.5em;
 }
 
 #main-footer{
