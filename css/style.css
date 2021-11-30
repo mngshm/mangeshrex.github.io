@@ -57,7 +57,7 @@ body{
 }
 
 #navbar a:hover{
-	text-decoratio6db0adn: none;
+	text-decoration: none;
 	color: #6bb05d;
 }
 
@@ -67,7 +67,7 @@ body{
 	margin-top: 20px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-radius: 2em;
+	border-radius: 10px;
 	line-height: 60px;
 	font-size: 1.2em;
 	color: #c5c8c9;
