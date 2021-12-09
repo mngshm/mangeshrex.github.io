@@ -108,6 +108,9 @@ body{
 	line-height: 1.5em;
 }
 
+.project h1{
+	line-height: 50px; 
+} 
 #main-footer{
 	/* text-align: center; */
 	font-family: JetBrainsMono, monospace, sans-serif;
