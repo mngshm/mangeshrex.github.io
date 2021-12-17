@@ -1,119 +1,84 @@
-/* very badly written css? :)) */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap'); 
+
 *{
 	margin: 0;
-	padding: 0;
+	padding: 5px;
 }
 
 body{
 	background-color: #131a1c;
 }
 
-@font-face {
-	font-family: JetBrainsMono;
-	src: url(../assets/fonts/ttf/JetBrainsMono-ExtraLight.ttf);
-}   
-
-.clr{
-	clear: both;
+#intro { 
+	font-family: 'DM Sans', sans-serif;
+	color: #c5c8c9; 
+	padding: 10px 10px 10px 10px; 
+	margin-top: 10%; 
+	margin-bottom: 10%;
+	margin-left: 15%; 
+	margin-right: 20%;
+	max-width: 600px;
+	max-height: auto;
 }
 
-#main-header {
-	height: 300px;
-	margin: 0px 0px 0px 0px;
-	background-color: #131a1c;
+#intro-text-2 { 
+	font-family: 'DM Sans', sans-serif;
+	font-size: 1.2em; 
+	line-height: 1.5rem;
+	font-weight: 410;
+	/* negative margin */
+	margin-left: 2.15rem;
+	text-align: left; 
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
 }
 
-#main-header img{
-	margin: 0px;
-	height: 200px;
-	border-radius: 7em;
+#intro-text-2 a{ 
+	text-decoration: none;
+	color: #8ed9b1;  
 }
 
-#main-header div{
-	color: #e74c4c;
-	font-family: JetBrainsMono, monospace, sans-serif;
-	font-size: 28px;
-	margin: 10px 10px 0px 0px;
-	padding: 35px 10px;
-	border-radius: 1em;
+/* Underline hover animation */ 
+.hover-underline-animation {
+	color: #8ed9b1;
+	position: relative;
+	display: inline-block;
 }
 
-#navbar{
-	/* background-color: #2ac3de; */
-	font-family: JetBrainsMono, monospace, sans-serif;
-	align-items: center;
-	margin-top: 20px;
-	margin-bottom: 100px;
-	margin-left: 5px;
-	margin-right: 5px;
+.hover-underline-animation:after {
+	content: '';
+	width: 100%;
+	transform: scaleX(0);
+	position: absolute;
+	height: 2px;
+	bottom: 1px;
+	background-color: #8ed9b1;
+	left: 0;
+	transition: transform 0.25s ease-out;
+	transform-origin: bottom right;
 }
 
-#navbar ul{
-	list-style: none;
+.hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom center;
 }
-
-#navbar li{
-	display: inline;
-}
-
-#navbar a:hover{
-	text-decoratio6db0adn: none;
-	color: #6bb05d;
-}
-
-.nav-button{
-	/* position: absolute; */
-	padding: 10px;
-	margin-top: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border-radius: 2em;
-	line-height: 60px;
-	font-size: 1.2em;
+ 
+#navbar {
+	font-family: 'DM Sans', sans-serif;
+	font-style: normal;
+	background-color: #1b2224; 
+	text-align: right;
 	color: #c5c8c9;
-	background-color: #2a3133;
+	padding-right: 20px;
+} 
+
+#navbar a:hover{ 
+	color: #8ed9b1;
+	text-decoration: overline;
 }
 
-.foo{
-	margin: 20px;
-	padding: 30px;
-	background-color: #2a3133;
-	color: #c5c8c9;
-	border-radius: 1em;
-	font-family: JetBrainsMono, monospace, sans-serif;
-	font-size: 1em;
-	line-height: 1.5em;
-}
-
-.bar{
-	margin: 20px;
-	padding: 30px;
-	background-color: #2a3133;
-	color: #c5c8c9;
-	border-radius: 1em;
-	font-family: JetBrainsMono, monospace, sans-serif;
-	font-size: 1em;
-	line-height: 1.6em;
-}
-
-
-.project{
-	margin: 20px;
-	padding: 30px;
-	background-color:#2a3133;
-	color: #c5c8c9;
-	border-radius: 1em;
-	font-family: JetBrainsMono, monospace, sans-serif;
-	font-size: 1em;
-	line-height: 1.5em;
-}
-
-#main-footer{
-	/* text-align: center; */
-	font-family: JetBrainsMono, monospace, sans-serif;
-	font-size: 1em;
-	color:#c5c8f9;
-	padding: 10px;
-	margin: 20px;
-	text-align: center;    
+#navbar a { 
+	color: #c5c9c9;
+	text-decoration: none;
 }
