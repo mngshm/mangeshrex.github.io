@@ -3,7 +3,7 @@
 :root { 
 	--teal: #8ed8d1;;
 	--background-dark: #181f21;
-        --background: #22292b;
+    --background: #22292b;
 	--white: #dadada 
 }
 *{
@@ -13,6 +13,30 @@
 
 body{
 	background-color: var(--background-dark);
+}
+
+h1 { 
+	animation-name: move-to-left;
+	animation-duration: 2s;
+	position: relative;
+}
+
+@keyframes move-to-left { 
+	0%  {
+		left: 200px; 
+	}
+	25% {
+		left: 0px;
+	}
+	/* 50% { 
+		left: 100px;
+	}
+	75% { 
+		left: 50px;
+	}
+	100% { 
+		left: 0px;
+	} */
 }
 
 #intro { 
@@ -32,10 +56,21 @@ body{
 	font-size: 1.2em; 
 	line-height: justify;
 	font-weight: 510;
-	margin: auto;
 	text-align: left; 
 	display: block;
 	margin: auto;
+	animation-name: move-to-right;
+	animation-duration: 2s;
+	position: relative;
+}
+
+@keyframes move-to-right { 
+	0%  {
+		right: 200px;
+	}
+	25% {
+		right: 0px;
+	}
 }
 
 #intro-text-2 a{ 
