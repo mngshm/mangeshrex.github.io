@@ -1,10 +1,14 @@
+/* 
+ * CSS for my portfolio 
+ */ 
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap'); 
 
 :root { 
-	--teal: #8ed8d1;;
+	--teal: #8ed8d1;
 	--background-dark: #181f21;
-    --background: #22292b;
-	--white: #dadada 
+        --background: #22292b;
+	--white: #dadada;
 }
 *{
 	margin: 0;
@@ -13,6 +17,7 @@
 
 body{
 	background-color: var(--background-dark);
+	left: 20em;
 }
 
 h1 { 
@@ -46,9 +51,10 @@ h1 {
 	margin-top: 12%; 
 	margin-bottom: 5%;
 	margin-left: 10%; 
-	margin-right: 10%;
+	margin-right: 5%;
 	max-width: 600px;
 	max-height: auto;
+	top: 5em;
 }
 
 #intro-text-2 { 
@@ -58,7 +64,6 @@ h1 {
 	font-weight: 510;
 	text-align: left; 
 	display: block;
-	margin: auto;
 	animation-name: move-to-right;
 	animation-duration: 2s;
 	position: relative;
