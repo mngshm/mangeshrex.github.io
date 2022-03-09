@@ -2,6 +2,7 @@
  * CSS for my portfolio 
  */ 
 
+ 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap'); 
 
 :root { 
@@ -22,7 +23,7 @@ body{
 
 h1 { 
 	animation-name: move-to-left;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	position: relative;
 }
 
@@ -48,7 +49,7 @@ h1 {
 	font-family: 'DM Sans', sans-serif;
 	color: var(--white); 
 	padding: 10px 10px 10px 10px; 
-	margin-top: 12%; 
+	margin-top: 12%;
 	margin-bottom: 5%;
 	margin-left: 10%; 
 	margin-right: 5%;
@@ -65,7 +66,7 @@ h1 {
 	text-align: left; 
 	display: block;
 	animation-name: move-to-right;
-	animation-duration: 2s;
+	animation-duration: 1s;
 	position: relative;
 }
 
@@ -95,8 +96,8 @@ h1 {
 	width: 100%;
 	transform: scaleX(0);
 	position: absolute;
-	height: 2px;
-	bottom: 0px;
+	height: 1px;
+	bottom: 1px;
 	background-color: var(--teal);
 	left: 0;
 	transition: transform 0.25s ease-out;
@@ -114,7 +115,7 @@ h1 {
 	color: var(--teal);
 	padding: 10px;
 	font-size: 1em;
-	border-radius: 5em;
+	border-radius: 1em;
 	border: none;
 	cursor: pointer;
 	box-shadow: 5px 0px 5px 0px #131a1c;
