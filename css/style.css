@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
 :root {
     --teal: #8ed8d1;
-    ;
     --background-dark: #181f21;
     --background: #22292b;
     --white: #dadada
@@ -13,27 +12,27 @@
     padding: 5px;
 }
 
-#intro {
+#heading {
     font-family: 'DM Sans', sans-serif;
     color: var(--white);
     padding: 10px 10px 10px 10px;
-    margin-top: 12%;
-    margin-bottom: 10%;
+    margin-top: 15%;
+    margin-bottom: 15%;
     margin-left: 10%;
     margin-right: 10%;
-    max-width: 600px;
-    max-height: auto;
+    max-width: 80vh;
+    max-height: 100vh;
 }
 
-#intro p {
+#heading p {
     font-size: 1.10em;
     font-family: 'DM Sans', sans-serif;
 }
 
-p #body {
+p #info {
     font-family: 'DM Sans', sans-serif;
     font-size: 1.2em;
-    line-height: justify;
+    line-height: normal;
     font-weight: 510;
     margin: auto;
     text-align: left;
@@ -41,7 +40,7 @@ p #body {
     margin: auto;
 }
 
-p #body {
+p #info {
     animation-name: right;
     animation-duration: 4s;
 }
@@ -55,7 +54,7 @@ p #body {
     }
 }
 
-#body a {
+#info a {
     text-decoration: none;
     color: var(--teal);
 }
@@ -75,7 +74,7 @@ p #body {
     transform: scaleX(0);
     position: absolute;
     height: 1px;
-    bottom: 1px;
+    bottom: 0px;
     background-color: var(--teal);
     left: 0;
     transition: transform 0.25s ease-out;
@@ -156,7 +155,7 @@ p #body {
 
 .welcome-section {
     width: 100%;
-    height: 40vh;
+    height: 45vh;
     font-family: 'DM Sans', sans-serif;
     color: var(--white);
     font-size: 40px;
@@ -172,7 +171,7 @@ p #body {
     color: #3b4244;
     font-size: 20px;
     width: 100%;
-    padding: 10px;
+    padding: 5px;
     font-style: italic;
     margin: auto;
     text-align: center;
