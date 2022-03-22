@@ -13,6 +13,7 @@
 }
 
 #heading {
+    background-color: #22292b;
     font-family: 'DM Sans', sans-serif;
     color: var(--white);
     padding: 10px 10px 10px 10px;
@@ -20,8 +21,8 @@
     margin-bottom: 15%;
     margin-left: 10%;
     margin-right: 10%;
-    max-width: 80vh;
-    max-height: 100%;
+    width: 100vh;
+    height: 100%;
 }
 
 #heading p {
