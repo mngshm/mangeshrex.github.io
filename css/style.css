@@ -12,6 +12,10 @@
     padding: 5px;
 }
 
+body { 
+    background-color: var(--background-dark);
+}
+
 #heading {
     background-color: #22292b;
     font-family: 'DM Sans', sans-serif;
