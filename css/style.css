@@ -3,8 +3,8 @@
 :root {
     --teal: #8ed8d1;
     --background-dark: #181f21;
-    --background: #22292b;
-    --white: #dadada
+    --background: #242d30;
+    --white: #cff5f1
 }
 
 * {
@@ -13,7 +13,7 @@
 }
 
 body { 
-    background-color: var(--background-dark);
+    background-color: #0d1011f1;
 }
 
 #heading {
