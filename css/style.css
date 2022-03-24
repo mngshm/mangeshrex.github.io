@@ -22,13 +22,21 @@ body {
     color: var(--white);
     padding: 10px 10px 10px 10px;
     margin-top: 10%;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
     margin-left: 10%;
     margin-right: 10%;
     width: 90vh;
     height: 100%;
 }
 
+@media (max-width: 500px) {
+    #heading { 
+        width: 300px;
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
 #heading p {
     font-size: 1.10em;
     font-family: 'DM Sans', sans-serif;
