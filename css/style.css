@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
+
 :root {
     --teal: #8ed8d1;
     --background-dark: #181f21;
-    --background: #242d30;
-    --white: #cff5f1
+    --background: #22292b;
+    --white: #dadadd;
 }
 
 * {
@@ -13,19 +14,18 @@
 }
 
 body { 
-    background-color: #0d1011f1;
+    background-color: var(--background-dark);
 }
 
 #heading {
-    background-color: #22292b;
     font-family: 'DM Sans', sans-serif;
     color: var(--white);
     padding: 10px 10px 10px 10px;
     margin-top: 10%;
-    margin-bottom: 15%;
+    margin-bottom: 7%;
     margin-left: 10%;
     margin-right: 10%;
-    width: 100vh;
+    width: 90vh;
     height: 100%;
 }
 
@@ -39,13 +39,9 @@ p #info {
     font-size: 1.2em;
     line-height: normal;
     font-weight: 510;
-    margin: auto;
     text-align: left;
     display: block;
-    margin: auto;
-}
-
-p #info {
+    width: 100vh;
     animation-name: right;
     animation-duration: 4s;
 }
