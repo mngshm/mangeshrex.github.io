@@ -37,6 +37,16 @@ body {
         margin-right: 5%;
     }
 }
+
+@media (max-width: 800px) {
+    #heading { 
+        width: 500px;
+        height: 100%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
 #heading p {
     font-size: 1.10em;
     font-family: 'DM Sans', sans-serif;
@@ -67,7 +77,6 @@ p #info {
     text-decoration: none;
     color: var(--teal);
 }
-
 
 /* Underline hover animation */
 
