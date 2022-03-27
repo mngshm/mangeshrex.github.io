@@ -13,6 +13,11 @@
     padding: 5px;
 }
 
+html { 
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body { 
     background-color: var(--background-dark);
 }
@@ -29,24 +34,23 @@ body {
     height: 100%;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     #heading { 
         width: 300px;
         height: 100%;
         margin-left: 5%;
-        margin-right: 5%;
+        margin-right: 4%;
     }
 }
 
 @media (max-width: 800px) {
     #heading { 
-        width: 500px;
+        width: 400px;
         height: 100%;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-left: 7%;
+        margin-right: 7%;
     }
 }
-
 #heading p {
     font-size: 1.10em;
     font-family: 'DM Sans', sans-serif;
