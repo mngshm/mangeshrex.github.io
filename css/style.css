@@ -36,21 +36,13 @@ body {
 
 @media (max-width: 600px) {
     #heading { 
-        width: 300px;
+        width: 350px;
         height: 100%;
         margin-left: 5%;
         margin-right: 4%;
     }
 }
 
-@media (max-width: 800px) {
-    #heading { 
-        width: 400px;
-        height: 100%;
-        margin-left: 7%;
-        margin-right: 7%;
-    }
-}
 #heading p {
     font-size: 1.10em;
     font-family: 'DM Sans', sans-serif;
@@ -66,15 +58,6 @@ p #info {
     width: 100vh;
     animation-name: right;
     animation-duration: 4s;
-}
-
-@keyframes right {
-    0% {
-        right: 10em;
-    }
-    25% {
-        right: 0px;
-    }
 }
 
 #info a {
@@ -184,7 +167,7 @@ p #info {
     justify-content: center;
     align-items: center;
     margin-top: 300px;
-    top: 70%;
+    top: 80%;
     left: 50%;
 }
 
@@ -237,4 +220,14 @@ h1 {
 .reveal.active {
     transform: translateY(0);
     opacity: 1;
+}
+
+#footer {
+    background-color: var(--background);
+    color: var(--white);
+    text-align: center;
+    font-size: 1.20em;
+    font-family: 'DM Sans', sans-serif;
+    padding: 15px 15px 15px 15px;
+    width: 100%;
 }
