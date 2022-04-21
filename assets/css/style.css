@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap");
+
+:root {
+  --teal: #8ed8d1;
+  --background-dark: #181f21;
+  --background: #22292b;
+  --white: #dadadd;
+}
+
+* {
+  margin: 0;
+  padding: 5px;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background-dark);
+}
+
+.welcome-section {
+  /* width: 100%; */
+  height: 60vh;
+  font-family: "DM Sans", sans-serif;
+  color: var(--white);
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  top: 80%;
+  left: 50%;
+}
+
+.welcome-section h4 {
+  font-family: "JetBrains Mono", monospace;
+  color: #3b4244;
+  font-size: 20px;
+  width: 100%;
+  padding: 5px;
+  font-style: italic;
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .welcome-section h2 {
+    font-size: 32px;
+  }
+  .welcome-section h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 500px) {
+  .welcome-section h2 {
+    font-size: 28px;
+  }
+  .welcome-section h4 {
+    font-size: 12px;
+  }
+}
+
+/* Dropdown Button */
+
+.dropbtn {
+  background-color: var(--background);
+  color: var(--teal);
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 1em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 5px 0px 5px 0px #131a1c;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #131a1c;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--teal);
+  color: var(--background);
+  min-width: 17px;
+  border-radius: 4em;
+  box-shadow: 0px 8px 5px 0px #131a1c;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: var(--background);
+  padding: 3px 3px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+  background-color: var(--background);
+  color: var(--teal);
+  border-radius: 5em;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show {
+  display: block;
+}
+
+
+span {
+  color: var(--teal);
+  font-weight: 400;
+}
+
+h1 {
+  animation-name: move-to-left;
+  animation-duration: 2s;
+  position: relative;
+}
+
+@keyframes move-to-left {
+  0% {
+    left: 300px;
+  }
+  25% {
+    left: 0px;
+  }
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+#heading {
+  font-family: "DM Sans", sans-serif;
+  color: var(--white);
+  padding: 10px 10px 10px 10px;
+  margin: 5% 10% 7% 5%;
+  /* margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 10%;
+  margin-right: 10%; */
+  /* width: 90vh; */
+  height: 100%;
+}
+
+#heading p {
+  font-size: 1.1em;
+  font-family: "DM Sans", sans-serif;
+}
+
+@media (max-width: 600px) {
+  #heading {
+    /* width: 350px; */
+    height: 100%;
+    margin: 20px 5px;
+  }
+}
+
+#info p{
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2em;
+  line-height: normal;
+  font-weight: 510;
+  text-align: left;
+  display: block;
+  /* width: 100vh; */
+  animation-name: right;
+  animation-duration: 4s;
+}
+
+#info a {
+  text-decoration: none;
+  color: var(--teal);
+}
+
+/* Underline hover animation */
+
+.hover-underline-animation {
+  color: var(--teall);
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  width: 100%;
+  transform: scaleX(0);
+  position: absolute;
+  height: 1px;
+  bottom: 0px;
+  background-color: var(--teal);
+  left: 0;
+  transition: transform 0.25s ease-out;
+  transform-origin: bottom center;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom center;
+}
+
+#footer {
+  background-color: var(--background);
+  color: var(--white);
+  text-align: center;
+  font-size: 1em;
+  font-family: "DM Sans", sans-serif;
+  padding: 15px 15px 15px 15px;
+  /* width: 100%; */
+}
