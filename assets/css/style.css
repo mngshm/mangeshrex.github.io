@@ -10,12 +10,65 @@
 
 * {
   margin: 0;
-  padding: 5px;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-  box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+li, ul, button {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1em;
+  color: var(--white);
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  background-color: var(--background);
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+}
+
+.navbar {
+  width: 50%;
+  overflow: hidden;
+}
+
+.navbar i {
+  color: var(--teal);
+}
+
+.nav__links {
+  list-style: none;
+}
+
+.nav__links li, a {
+  text-decoration: none;
+  color: var(--white);
+  display: inline-block;
+  padding: 0px 10px;
+  transition: all 0.2s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: var(--teal);
+}
+
+button {
+  padding: 9px 25px;
+  color: var(--background-dark);
+  background-color: var(--teal);
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
+}
+
+button:hover {
+  background-color: var(--white);
+  color: var(--background);
 }
 
 body {
@@ -24,13 +77,13 @@ body {
 
 .welcome-section {
   /* width: 100%; */
-  height: 60vh;
   font-family: "DM Sans", sans-serif;
   color: var(--white);
   font-size: 40px;
   justify-content: center;
   align-items: center;
-  margin-top: 300px;
+  padding-bottom: 300px;
+  padding-top: 300px;
   top: 80%;
   left: 50%;
 }
@@ -53,12 +106,18 @@ body {
   .welcome-section h4 {
     font-size: 16px;
   }
+  .welcome-section {
+    margin: 2em 2em 2em 2em;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 @media (max-width: 500px) {
   .welcome-section h2 {
     font-size: 28px;
   }
+
   .welcome-section h4 {
     font-size: 12px;
   }
@@ -69,7 +128,7 @@ body {
 .dropbtn {
   background-color: var(--background);
   color: var(--teal);
-  padding: 10px;
+  padding: 15px;
   font-size: 1em;
   border-radius: 1em;
   border: none;
@@ -131,26 +190,10 @@ span {
   font-weight: 400;
 }
 
-h1 {
-  animation-name: move-to-left;
-  animation-duration: 2s;
-  position: relative;
-}
-
-@keyframes move-to-left {
-  0% {
-    left: 300px;
-  }
-  25% {
-    left: 0px;
-  }
-}
-
 .reveal {
-  position: relative;
   transform: translateY(150px);
   opacity: 0;
-  transition: 1s all ease;
+  transition: 1s all ease-out;
 }
 
 .reveal.active {
@@ -162,7 +205,7 @@ h1 {
   font-family: "DM Sans", sans-serif;
   color: var(--white);
   padding: 10px 10px 10px 10px;
-  margin: 5% 10% 7% 5%;
+  margin: 0% 10% 5% 5%;
   /* margin-top: 10%;
   margin-bottom: 5%;
   margin-left: 10%;
@@ -179,12 +222,11 @@ h1 {
 @media (max-width: 600px) {
   #heading {
     /* width: 350px; */
-    height: 100%;
-    margin: 20px 5px;
+    margin: auto;
   }
 }
 
-#info p{
+#info p {
   font-family: "DM Sans", sans-serif;
   font-size: 1.2em;
   line-height: normal;
@@ -196,6 +238,11 @@ h1 {
   animation-duration: 4s;
 }
 
+@media screen and (max-width: 500px) {
+  #info {
+    margin: 2em 2em 2em 2em;
+  }
+}
 #info a {
   text-decoration: none;
   color: var(--teal);
@@ -227,7 +274,122 @@ h1 {
   transform-origin: bottom center;
 }
 
+#Project h2{
+  font-family: 'DM Sans', sans-serif;
+  font-size: 2em;
+  font-weight: 100;
+  color: var(--teal);
+  padding: 30px;
+}
+
+/* Float four columns side by side */
+.column {
+  float: right;
+  width: 20%;
+  padding: 0 10px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1em;
+  color: var(--white);
+  background-color: var(--teal);
+  display: block;
+}
+
+.column a {
+  color: var(--background-dark);
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {
+  margin: 20px 10px 20px 10px;
+  background-color: #8ed8d1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  color: var(--background);
+  background-color: var(--white);
+  display: flexbox;
+  padding: 16px;
+  text-align: center;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.card:hover {
+  margin-top: -10px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.contact-me {
+  padding: 30px 10px 30px 10px;
+}
+.contact-me h1 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8em;
+  font-weight: 200;
+  color: var(--white);
+}
+
+.contact-me p {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.2em;
+  font-weight: 200;
+  color: var(--white);
+  text-align: center;
+  margin: 20px 50px 20px 50px;
+}
+
+.contact-me i {
+  font-size: 2em;
+}
+
+.contact__links {
+  display: flex;
+  justify-content: center;
+}
+
+.contact__links  {
+  text-align: center;
+  border-radius: 35px;
+  color: var(--white);
+  font-size: 21px;
+  animation: updown 2s ease-in-out infinite;
+}
+
+@keyframes updown {
+0% {
+  transform: translateY(-00%);
+}
+
+50% {
+  transform: translateY(50%);
+}
+
+100% {
+  transform: translateY(-50%);
+}
+}
+
 #footer {
+  padding-top: 30px;
   background-color: var(--background);
   color: var(--white);
   text-align: center;
