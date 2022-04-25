@@ -205,7 +205,7 @@ span {
   font-family: "DM Sans", sans-serif;
   color: var(--white);
   padding: 10px 10px 10px 10px;
-  margin: 0% 10% 5% 5%;
+  margin: 0% 10% 5% 10%;
   /* margin-top: 10%;
   margin-bottom: 5%;
   margin-left: 10%;
@@ -214,6 +214,9 @@ span {
   height: 100%;
 }
 
+#heading h1 {
+  font-size: 2rem;
+}
 #heading p {
   font-size: 1.1em;
   font-family: "DM Sans", sans-serif;
@@ -231,7 +234,7 @@ span {
   font-size: 1.2em;
   line-height: normal;
   font-weight: 510;
-  text-align: left;
+  text-align: center;
   display: block;
   /* width: 100vh; */
   animation-name: right;
@@ -278,20 +281,18 @@ span {
   font-family: 'DM Sans', sans-serif;
   font-size: 2em;
   font-weight: 100;
-  color: var(--teal);
+  color: var(--white);
   padding: 30px;
 }
 
 /* Float four columns side by side */
 .column {
   float: right;
-  width: 20%;
+  width: 25%;
   padding: 0 10px;
   font-family: 'DM Sans', sans-serif;
   font-size: 1em;
   color: var(--white);
-  background-color: var(--teal);
-  display: block;
 }
 
 .column a {
@@ -300,11 +301,12 @@ span {
   font-size: 1.5em;
 }
 
+.c
 /* Remove extra left and right margins, due to padding in columns */
 .row {
   margin: 20px 10px 20px 10px;
-  background-color: #8ed8d1;
 }
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -318,15 +320,18 @@ span {
   box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
   color: var(--background);
   background-color: var(--white);
-  display: flexbox;
+  display: block;
   padding: 16px;
   text-align: center;
   margin-right: 10px;
   margin-left: 10px;
+  max-height: 30%;
 }
 
 .card:hover {
   margin-top: -10px;
+  background-color: var(--teal);
+  color: var(--background);
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -341,6 +346,7 @@ span {
 .contact-me {
   padding: 30px 10px 30px 10px;
 }
+
 .contact-me h1 {
   font-family: "DM Sans", sans-serif;
   font-size: 1.8em;
@@ -371,23 +377,12 @@ span {
   border-radius: 35px;
   color: var(--white);
   font-size: 21px;
-  animation: updown 2s ease-in-out infinite;
 }
 
-@keyframes updown {
-0% {
-  transform: translateY(-00%);
+.contact__links a:hover {
+  color: var(--teal);
+  
 }
-
-50% {
-  transform: translateY(50%);
-}
-
-100% {
-  transform: translateY(-50%);
-}
-}
-
 #footer {
   padding-top: 30px;
   background-color: var(--background);
