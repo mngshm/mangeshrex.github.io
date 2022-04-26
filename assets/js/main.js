@@ -1,5 +1,17 @@
-/* When the user clicks on the button, 
-               toggle between hiding and showing the dropdown content */
+// navbar
+function navFunc() {
+  var x = document.getElementById("navbar");
+  if (x.className === "navbar") {
+    x.className += " responsive";
+  } else {
+    x.className = "navbar";
+  }
+}
+
+/* 
+When the user clicks on the button, 
+toggle between hiding and showing the dropdown content 
+*/
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -39,12 +51,12 @@ window.addEventListener("scroll", reveal);
 
 var i = 0;
 var txt = "Hello, I'm Mangesh";
-var speed = 100; /*The speed of the text*/ 
+var speed = 100; /*The speed of the text*/
 
-function typeWriter(){
+function typeWriter() {
   if (i < txt.length) {
-    document.getElementById(welcome-section).innerHTML += txt.charAt(i)
+    document.getElementById(welcome - section).innerHTML += txt.charAt(i);
     i++;
-    setTimeout(typeWriter, speed)
+    setTimeout(typeWriter, speed);
   }
 }

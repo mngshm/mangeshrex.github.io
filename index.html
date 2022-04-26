@@ -16,23 +16,24 @@
 
 <body>
     <header>
-        <nav class="navbar">
-            <ul class="nav__links">
-                <li><a href="#welcome-section">Home</a></li>
-                <li><a href="#heading">About</a></li>
-                <li><a href="#Project">Projects</a></li>
-            </ul>
-        </nav>
-        <a href="cta" href="#Contact"><button>Contact</button></a>
+        <div class="navbar" id="navbar">
+            <a href="#welcome-section" class="active">Home</a>
+            <a href="#heading">About</a>
+            <a href="#Project">Projects</a>
+            <a href="#Contact">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="navFunc()">
+                <i class="ph-list"></i>
+            </a>
+        </div>
     </header>
 
-    <section class="welcome-section reveal">
+    <section id="welcome-section" class="welcome-section reveal">
         <h2 align="center">$ Hello I am <span style>Mangesh</span></h2>
         <h4>// A Linux enthusiast and a programmer</h4>
     </section>
 
     <section id="heading">
-        <div id="heading" class="">
+        <div class="heading">
             <h1 align="center">About <span>Me</span></h1>
             <br>
             <p align="center" id="info">
@@ -56,38 +57,39 @@
     <section id="Project">
         <h2 align="center">Projects</h2>
         <div class="row" align="center">
-            <div  align="center" class="column">
-              <div class="card">
-              <a href="https://github.com/mangeshrex/rxfetch">Rxfetch</a>
-              <p>Rxfetch is a yet another system fetching tool in bash which i wrote long ago
-                  pushing it as my first ever github project.
-              </p>
+            <div align="center" class="column">
+                <div class="card">
+                    <a href="https://github.com/mangeshrex/rxfetch">Rxfetch</a>
+                    <p>Rxfetch is a yet another system fetching tool in bash which i wrote long ago
+                        pushing it as my first ever github project.
+                    </p>
+                </div>
+            </div>
+            <div align="center" class="column">
+                <div class="card">
+                    <a href="https://github.com/mangeshrex/dotfiles">Dotfiles</a>
+                    <p>This is the place where I store all of my Linux Configuration files doesn't matter whether
+                        it is for personal use or Rice.
+                    </p>
+                </div>
+            </div>
+            <div align="center" class="column">
+                <div class="card">
+                    <a href="https://github.com/Everblush">Everblush</a>
+                    <p>Everblush is a Dark and beautiful colorscheme created to maintain producity. It's new into
+                        the field. I am working on more ports for now.
+                    </p>
+                </div>
+            </div>
+            <div align="center" class="column">
+                <div class="card">
+                    <a href="https://github.com/mangeshrex/Portfolio">Portfolio</a>
+                    <p>Yeah, this is my shit static website lol, I've only use plain HTML, CSS and a lil bit of JS to
+                        make this.
+                    </p>
+                </div>
             </div>
         </div>
-        <div align="center" class="column">
-            <div class="card">
-                <a href="https://github.com/mangeshrex/dotfiles">Dotfiles</a>
-                <p>This is the place where I store all of my Linux Configuration files doesn't matter whether 
-                    it is for personal use or Rice.
-                </p>
-            </div>
-        </div>
-        <div align="center" class="column">
-            <div class="card">
-                <a href="https://github.com/Everblush">Everblush</a>
-                <p>Everblush is a Dark and beautiful colorscheme created to maintain producity. It's new into
-                    the field. I am working on more ports for now. 
-                </p>
-            </div>
-        </div>
-        <div align="center"class="column">
-            <div class="card">
-                <a href="https://github.com/mangeshrex/Portfolio">Portfolio</a>
-                <p>Yeah, this is my shit static website lol, I've only use plain HTML, CSS and a lil bit of JS to make this.
-                </p>
-            </div>
-            </div>
-          </div> 
     </section>
     <br>
     <section id="Contact">
@@ -97,8 +99,8 @@
                 I am ready to work on Static Web Page and FrontEnd Design.
             </p>
             <div class="contact__links " align="center">
-                <a  href="https://github.com/mangeshrex"><i class="ph-github-logo" color="181f21"></i></a>
-                <a  href="https://discord/users/mangeshrex#3820"><i class="ph-discord-logo" color="181f21"></i></a>
+                <a href="https://github.com/mangeshrex"><i class="ph-github-logo" color="181f21"></i></a>
+                <a href="https://discord/users/mangeshrex#3820"><i class="ph-discord-logo" color="181f21"></i></a>
                 <a href="https://t.me/mangeshrex"><i class="ph-telegram-logo" color="181f21"></i></a>
             </div>
         </div>
@@ -106,7 +108,7 @@
 
     <footer id="footer">
         Made with <span>❤</span> by <span>Mangeshrex</span>.</br>
-        Copyright © 2021-2022 <span>Man4geshrex</span>. All Rights Reserved.
+        Copyright © 2021-2022 <span>Mangeshrex</span>. All Rights Reserved.
     </footer>
 </body>
 
