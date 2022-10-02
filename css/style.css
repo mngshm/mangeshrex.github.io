@@ -762,10 +762,12 @@ header .circle {
 
 .skills {
   margin: 1.5rem 0 2.5rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .skill {
-  margin: 1rem 0;
+  margin: 1.5rem 1rem 0rem 0rem;
 }
 
 .skill-title {
@@ -775,11 +777,11 @@ header .circle {
 }
 
 .skill-bar {
-  width: 70%;
+  width: 100%;
   height: 8px;
   border-radius: 4px;
   background-color: #ece6fa;
-  position: relative;
+  position: absolute;
   overflow: hidden;
 }
 
