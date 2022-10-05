@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+    
+
+html {
+    background-color: #1e2528;
+    height: 100%;
+}
+
+.header h1 {
+    font-style: italic;
+    font-size: 50px;
+}
+
+.header h2 {
+    font-size: 40px;
+}
+.about-text {
+    max-width: 500px;
+}
+
+span {
+    color: #c47fd5;
+}
