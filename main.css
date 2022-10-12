@@ -4,8 +4,13 @@
     
 
 html {
-    background-color: #1e2528;
     height: 100%;
+    background: url(https://w.wallhaven.cc/full/j8/wallhaven-j8v1xw.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .header h1 {
@@ -21,5 +26,5 @@ html {
 }
 
 span {
-    color: #67b0e8;
+    color: lightgreen;
 }
