@@ -1,43 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mangesh | Geek</title>
-    <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="./output.css">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mangesh | Geek</title>
+  <link rel="stylesheet" href="./main.css" />
+  <link rel="stylesheet" href="./output.css" />
+  <link rel="stylesheet" href="./index.js" />
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
 </head>
+
 <body>
-    
-    <div class="container p-8 m-5 grid h-screen place-items-center" style="color: white">
-        <div class="header font-mono font-bold hover:text-center">
-            <h1 style="color: lightgreen">
-                Hello World
-            </h1>
-            <br>
-            <h2>I'm Mangesh</h2>
-            <br>
-            <div class="about-text" >
-                I'm a learner and a geek from India tinkering around the internet with random stuff.
-                I am a programmer. I am currently learning Haskell and JS. Im an <span>Arch Linux</span> user (currently).
-                I am also interested in Cyber Security, Linux System Administration and a hell lotta other stuff. 
-                I am a <span>colorscheme</span> developer. Other than tech I like to do <span>treks</span>, <span>read books</span>, <span>Classical Music</span>.    
-            </div>
-            <br>
-            <div class="social-links container grid grid-cols-3">
-                <div>
-                    <a class="hover:underline p-2" href="https://github.com/Mangeshrex">Github</a>
-                </div>
-                <div>
-                    <a class="hover:underline p-2" href="https://discord.com/users/854017461958869023">Discord</a>
-                </div>
-                <div>
-                    <a class="hover:underline p-2"  href="https://youtube.com/c/Mangeshrex">Youtube</a>
-                </div>
-            </div>
+  <nav class="px-2 sm:px-4 sticky visible py-2.5 navbar">
+      <div class="container flex flex-wrap justify-end items-center mx-auto">
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="flex flex-col p-4 mt-2 rounded-lg border md:flex-row md:space-x-2 md:mt-0 md:text-lg md:font-medium md:border-0"
+          >
+            <li>
+              <a
+                href="#home"
+                class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            ,
+            <li>
+              <a
+                href="#about"
+                class="block py-2 pr-4 pl-3 rounded md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            ,
+            <li>
+              <a
+                href="#projects"
+                class="block py-2 pr-4 pl-3 rounded md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
+                >Projects</a
+              >
+            </li>
+            ,
+            <li>
+              <a
+                href="./photos.html"
+                class="block py-2 pr-4 pl-3 rounded md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
+                >Photographs</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
+    </nav>
+
+  <section class="welcome mt-40 min-h-full">
+    <div class="container p-6 flex place-content-center " style="color: black">
+      <br>
+      <div class="header">
+        <hr class="bg-black-10 thread h-1 mb-2 p-0">
+        <img src="./asset/ma.png" class="rounded-full w-12 h-12">
+        <h2 class="text-3xl sm:text-5xl text-left">I'm Mangesh</h2>
+        <br />
+        <p class="font-thin sm:text-2xl text-left text-xl">
+          A Front End Web Developer and Geek.
+        </p>
+        <br>
+        <hr class="h-1 mt-2 thread1 p-0">
+        <div class="container flex justify-end">
+          <div class="animate-bounce sm:w-4 sm:h-6 -ml-32 h-4">
+            <a href="#about"><i class="text-xl sm:text-2xl ph-caret-right p-3"></i></a>
+          </div>
+          <br>
+        </div>
+      </div>
     </div>
+  </section>
+
+
+  <section id="about" class="about ">
+    <div class="sm:flex items-center justify-center h-screen container">
+      <a class="sm:text-5xl text-2xl sm:mt-5 link mt-2 sm:px-4 m-2 px-4 border-l-8 decoration"><span>About me</span></a>
+      <p class="text-md sm:text-xl sm:space-x-2 space-x-0 sm:px-6 px-4 sm:py-6 py-2">
+        Hello, I'm a 17 year old Front End WebDev and an tech geek from <span> India</span>. I
+        am currently studying Computer Engineering (just for the sake
+        of doing).
+        I got started into tech during the <span>Covid-19</span> Lockdown when everyone was totally shut. So, computer
+        and <span> linux </span>
+        and got curious about other stuff.
+        <br>
+        <br>
+        I am good at HTML, CSS and basic C/C++ currenlty a newbie into tech. I am currently learning <span> Haskell
+        </span> just to give a try on functional
+        programming and category theory.
+        <br>
+        <br>
+        I like reading books, currenlty I am reading <span> "Surely you must be joking Mr. Richard" </span> and have
+        done reading <span> "The Almanack of naval ravikant"
+        </span> and <span> mindset </span>. And I also like taking street and portrait photographs.
+        </div>
+      </p>
+    </div>
+    </div>
+  </section>
+
+  <section id="projects"class="visible min-h-screen">
+    <h1 class="sm:text-4xl mt-2 flex justify-center text-xl mb-6">Projects</h1>
+    <div class="justify-center mt-6 grid gap-5 grid-cols-1 m-6  sm:grid-cols-2"> 
+      <div class="card max-w-sm sm:mx-32 visible rounded overflow-hidden shadow-xl">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2">Rxfetch</div>
+          <p class="text-gray-800 text-base">
+          Rxfetch is a very simple but clean looking fetch script.
+          </p>
+          <a class="link  hover:decoration-4 hover:underline" href="https://github.com/rxfetch">source</a>
+        </div>
+      </div>
+      <div class="card max-w-sm sm:mx-20 visible rounded overflow-hidden shadow-lg">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 ">Everblush</div>
+          <p class="text-gray-800 text-base">
+          Everblush is a dark, beautiful and vibrant colorscheme.
+          </p>
+          <a class="decoration hover:decoration-4 hover:underline" href="https://github.com/Everblush/">source</a>
+        </div>
+      </div>
+            <div class="card max-w-sm sm:mx-32 visible rounded overflow-hidden shadow-lg">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 ">portfolio</div>
+          <p class="text-gray-800 text-base">
+              My personal portfolio.
+          </p>
+          <a class="decoration hover:decoration-4 hover:underline " href="https://github.com/Mangeshrex/mangeshrex.github.io">source</a>
+        </div>
+      </div>
+            <div class="card max-w-sm sm:mx-20 visible rounded overflow-hidden shadow-lg">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 ">VoidWalls</div>
+          <p class="text-gray-800 text-base">
+           A forked project which has a lot of Void Linux wallpaper's.
+          </p>
+          <a class="decoration hover:decoration-4 hover:underline" href="https://github.com/Mangeshrex/voidwalls">source</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex visible mb-8 justify-center">
+      <h1 class="text-xl sm:text-2zl"> These are some of projects. </h1>
+    </div>
+  </section>
+
+  <footer class="thanks visible">
+    <div class="p-4 shadow-lg md:px-6 md:py-8 ">
+      <div class="sm:flex sm:justify-center sm:mx-12 mx-2 sm:justify-between">
+        <a href="https://mangeshrex.tech"><img class="w-12 rounded-full h-12" src="./asset/ma.png"></a>
+        <ul class="flex flex-wrap items-center mb-6 text-sm sm:mb-0 ">
+          <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+            </li>
+            <li>
+                <a href="https://t.me/mangeshrex" class="mr-4 hover:underline md:mr-6">Telegram</a>
+            </li>
+            <li>
+                <a href="https://github.com/Mangeshrex" class="mr-4 hover:underline md:mr-6 ">Github</a>
+            </li>
+            <li>
+                <a href="" class="hover:underline">Discord</a>
+            </li>
+        </ul>
+    </div>
+    <div class="sm:flex sm:justify-center">
+      <h3>© 2022. Made by <span> Mangesh </span> using Tailwind CSS.</h3>
+    </div>
+  </footer>
+  <script>
+    ScrollReveal().reveal(".welcome", { delay: 500 });
+    ScrollReveal().reveal(".about", { delay: 500 });
+    ScrollReveal().reveal(".projects", { delay: 500 });
+  </script>
+  <script src="https://unpkg.com/phosphor-icons"></script>
 </body>
+
 </html>

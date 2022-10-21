@@ -432,54 +432,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow: 0 0 #0000;
-  --tw-ring-shadow: 0 0 #0000;
-  --tw-shadow: 0 0 #0000;
-  --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
-}
-
-::-webkit-backdrop {
-  --tw-border-spacing-x: 0;
-  --tw-border-spacing-y: 0;
-  --tw-translate-x: 0;
-  --tw-translate-y: 0;
-  --tw-rotate: 0;
-  --tw-skew-x: 0;
-  --tw-skew-y: 0;
-  --tw-scale-x: 1;
-  --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
-  --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
-  --tw-ring-offset-width: 0px;
-  --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgb(83 156 212 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -526,7 +479,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(59 130 246 / 0.5);
+  --tw-ring-color: rgb(83 156 212 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -550,4 +503,216 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-    
+
+@font-face {
+  font-family: 'SFProDisplay';
+
+  src: url(./asset/SF-Pro-Display-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'SFProMedium';
+
+  src: url(./asset/SF-Pro-Display-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'SFProMono';
+
+  src: url(./asset/SFMono-Regular.otf);
+}
+
+html {
+  visibility: hidden;
+  width: 100%;
+  height: 100%;
+  background: #c8c8c8;
+  scroll-behavior: smooth;
+  -webkit-backdrop-filter: blue(10px);
+          backdrop-filter: blue(10px);
+  color: black !important;
+  /* opacity: 5%; */
+}
+
+.asset {
+  position: absolute;
+  display: flex;
+  z-index: -1;
+}
+
+.welcome {
+  position: relative;
+  background-color: #c8c8c8;
+  height: 100vh;
+}
+
+.welcome::before {
+  content: "";
+  width: 50%;
+  height: 100px;
+  position: absolute;
+  top: -48px;
+  left: 0;
+  background: #c8c8c8;
+  transform: skewY(8deg);
+  z-index: -1;
+}
+
+.welcome::after {
+  content: "";
+  width: 50%;
+  height: 100px;
+  position: absolute;
+  top: -48px;
+  right: 0;
+  background: #c8c8c8;
+  transform: skewY(-8deg);
+  z-index: -1;
+}
+
+.container {
+  font-family: 'SFProDisplay';
+}
+
+.header h1 {
+  color: #597eb0;
+  font-family: "SFProMedium";
+}
+
+.navbar {
+  background-color: transparent !important;
+  color: #0d0d0d;
+}
+
+span {
+  color: #597eb0;
+}
+
+.bubble::after {
+  content: '';
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  width: 80%;
+  background: linear-gradient(to bottom right, #67b0e8, #1e2528, #141b1e);
+  height: 10%;
+}
+
+@media (max-width: 500px) {
+  .bubble::after {
+    width: 100%;
+    height: 45%;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .bubble::after {
+    width: 100%;
+    height: 55%;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .bubble::after {
+    width: 100%;
+    height: 60%;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+  }
+}
+
+.from-left {
+  animation-name: from-left;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+
+@keyframes from-left {
+  from {
+    margin-left: -20%;
+  }
+
+  to {
+    margin-left: 8rem;
+  }
+}
+
+.ph-caret-right {
+  background-color: #597eb0 !important;
+  border-radius: 100%;
+  color: #0d0d0d;
+}
+
+hr {
+  height: 0px;
+  background-color: #597eb0;
+  border: 1;
+}
+
+.thread {
+  animation: thread1 2s;
+}
+
+@keyframes thread1 {
+  from {
+    width: 0%
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+.thread1 {
+  animation: thread2 2s;
+  width: 0px;
+}
+
+@keyframes thread2 {
+  from {
+    width: 100%
+  }
+
+  to {
+    width: 0%
+  }
+}
+
+#about p {
+  max-width: 600px;
+}
+
+.about a {
+  color: #0d0d0d !important;
+}
+
+.border-l-8 {
+  border-color: #0d0d0d;
+}
+
+#project {
+  font-family: "SFProDisplay";
+  color: #0d0d0d;
+}
+
+.card {
+  background-color: #dadada;
+}
+
+.card a {
+  text-decoration: none;
+  transition: 1s;
+}
+
+.card a:hover {
+}
+
+.thanks {
+  background-color: #0d0d0d;
+}
