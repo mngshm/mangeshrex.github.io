@@ -7,9 +7,12 @@
   "version": "1.0.0",
   "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind:watch": "tsc -w -p tailwind.tsconfig.json;tailwind -m -w -i src/styles/global.css -c tailwind.config.js",
+    "tailwind:build": "tsc -p tailwind.tsconfig.json;tailwind -m -i src/styles/global.css -c tailwind.config.js"
   },
   "author": "",
   "license": "ISC",
   "description": ""
 }
+
