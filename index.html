@@ -49,7 +49,7 @@
             <li>
               <a
                 href="./photos.html"
-                class="block py-2 pr-4 pl-3 rounded md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pr-4 pl-3 font-thin rounded md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
                 >Photographs</a
               >
             </li>
@@ -63,7 +63,7 @@
       <br>
       <div class="header">
         <hr class="bg-black-10 thread h-1 mb-2 p-0">
-        <img src="./asset/ma.png" class="rounded-full w-12 h-12">
+        <img src="./asset/ma.png" class="rounded-full animate-pulse w-12 h-12">
         <h2 class="text-3xl sm:text-5xl text-left">I'm Mangesh</h2>
         <br />
         <p class="font-thin sm:text-2xl text-left text-xl">
@@ -87,7 +87,7 @@
       <a class="sm:text-5xl text-2xl sm:mt-5 link mt-2 sm:px-4 m-2 px-4 border-l-8 decoration"><span>About me</span></a>
       <p class="text-md sm:text-xl sm:space-x-2 space-x-0 sm:px-6 px-4 sm:py-6 py-2">
       Hello, I am a 17 year old <span> front-end web developer </span> and a tech geek from <span> India </span>, currently pursing Computer Engineering. 
-
+      <br>
       I got interested in technology during the <span> COVID-19 </span> lockdown when everything was completely shut off, where I developed interest towards </span> Computers </span> , <span> Linux </span>and other stuff.
   <br>
   I work with <span> HTML </span> , <span> CSS </span>. I have a basic understanding of </span>C/C++ and JS</span>. I am currently learning </span>Haskell to try </span> functional programming </span> and </span> category theory </span>.
@@ -95,23 +95,23 @@
       I am currently reading "Surely you must be joking Mr. Richard", I have completed "The Almanack of Naval Ravikant" and mindset.
       During my spare time, I capture street photographs and potraits.
       <br>
-      And, I am proficient at playing <span> Tabla </span> .
+      And, I am proficient at playing <span>Tabla </span> .
         </div>
       </p>
     </div>
     </div>
   </section>
 
-  <section id="projects"class="visible min-h-screen">
+  <section id="projects"class="visible min-h-full">
     <h1 class="sm:text-4xl mt-2 flex justify-center text-xl mb-6">Projects</h1>
-    <div class="justify-center mt-6 grid gap-5 grid-cols-1 m-6  sm:grid-cols-2"> 
+    <div class="justify-center mt-6 grid gap-5 auto-cols-auto m-6  sm:grid-cols-2"> 
       <div class="card max-w-sm sm:mx-32 visible rounded overflow-hidden shadow-xl">
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2">Rxfetch</div>
           <p class="text-gray-800 text-base">
           Rxfetch is a very simple but clean looking fetch script.
           </p>
-          <a class="link  hover:decoration-4 hover:underline" href="https://github.com/rxfetch">source</a>
+          <button class="bg-blue-700 mt-2 rounded p-2"> <a class="link  hover:decoration-4 hover:underline" href="https://github.com/rxfetch">source</a></button>
         </div>
       </div>
       <div class="card max-w-sm sm:mx-20 visible rounded overflow-hidden shadow-lg">
@@ -120,16 +120,16 @@
           <p class="text-gray-800 text-base">
           Everblush is a dark, beautiful and vibrant colorscheme.
           </p>
-          <a class="decoration hover:decoration-4 hover:underline" href="https://github.com/Everblush/">source</a>
+          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration hover:decoration-4 hover:underline" href="https://github.com/Everblush/">source</a></button>
         </div>
       </div>
-            <div class="card max-w-sm sm:mx-32 visible rounded overflow-hidden shadow-lg">
+            <div class="card max-w-sm mt-2 sm:mx-32 visible rounded overflow-hidden shadow-lg">
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2 ">portfolio</div>
           <p class="text-gray-800 text-base">
               My personal portfolio.
           </p>
-          <a class="decoration hover:decoration-4 hover:underline " href="https://github.com/Mangeshrex/mangeshrex.github.io">source</a>
+          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration hover:decoration-4 hover:underline " href="https://github.com/Mangeshrex/mangeshrex.github.io">source</a></button>
         </div>
       </div>
             <div class="card max-w-sm sm:mx-20 visible rounded overflow-hidden shadow-lg">
@@ -138,9 +138,10 @@
           <p class="text-gray-800 text-base">
            A forked project which has a several Void Linux wallpaper's.
           </p>
-          <a class="decoration hover:decoration-4 hover:underline" href="https://github.com/Mangeshrex/voidwalls">source</a>
+          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration hover:decoration-4 hover:underline" href="https://github.com/Mangeshrex/voidwalls">source</a></button>
         </div>
       </div>
+    </div>
     </div>
 
     <div class="flex visible mb-8 justify-center">
@@ -148,7 +149,7 @@
     </div>
   </section>
 
-  <footer class="thanks visible">
+  <footer class="thanks visible ">
     <div class="p-4 shadow-lg md:px-6 md:py-8 ">
       <div class="sm:flex sm:justify-center sm:mx-12 mx-2 sm:justify-between">
         <a href="https://mangeshrex.tech"><img class="w-12 rounded-full h-12" src="./asset/ma.png"></a>
