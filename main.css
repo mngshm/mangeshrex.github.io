@@ -265,6 +265,7 @@ hr {
 .card a {
   text-decoration: none;
   transition: 1s;
+  color: #dadada;
 }
 .card a:hover { 
 
