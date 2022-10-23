@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <nav class="px-2 sm:px-4 sticky visible py-2.5 navbar">
+  <nav class="px-2 sm:px-4 fixed top-0 z-30 visible py-2.5 navbar">
       <div class="container flex flex-wrap justify-end items-center mx-auto">
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
@@ -24,7 +24,7 @@
             <li>
               <a
                 href="#home"
-                class="block py-2 pr-4 pl-3 rounded md:bg-transparent md:p-0"
+                class="block py-2 pr-4 hover-underline-animation pl-3 rounded md:bg-transparent md:p-0"
                 aria-current="page"
                 >Home</a
               >
@@ -33,7 +33,7 @@
             <li>
               <a
                 href="#about"
-                class="block py-2 pr-4 pl-3 rounded md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pr-4 pl-3 rounded md:hover:bg-transparent hover-underline-animation md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
                 >About</a
               >
             </li>
@@ -41,7 +41,7 @@
             <li>
               <a
                 href="#projects"
-                class="block py-2 pr-4 pl-3 rounded md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pr-4 pl-3 rounded hover-underline-animation md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
                 >Projects</a
               >
             </li>
@@ -49,7 +49,7 @@
             <li>
               <a
                 href="./photos.html"
-                class="block py-2 pr-4 pl-3 font-thin rounded md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pr-4 pl-3 font-thin hover-underline-animation rounded md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
                 >Photographs</a
               >
             </li>
@@ -58,8 +58,8 @@
       </div>
     </nav>
 
-  <section class="welcome mt-40 min-h-full">
-    <div class="container p-6 flex place-content-center " style="color: black">
+  <section class="welcome mt-38 sm:-ml-40 min-h-full">
+    <div class="container load-2 mt-40 p-6 flex justify-center" style="color: black">
       <br>
       <div class="header">
         <hr class="bg-black-10 thread h-1 mb-2 p-0">
@@ -71,8 +71,8 @@
         </p>
         <br>
         <hr class="h-1 mt-2 thread1 p-0">
-        <div class="container flex justify-end">
-          <div class="animate-bounce sm:w-4 sm:h-6 -ml-32 h-4">
+        <div class="container load-3 flex justify-end">
+          <div class="animate-bounce sm:w-4 hover-underline-animation sm:h-6 -ml-32 h-4">
             <a href="#about"><i class="text-xl sm:text-2xl ph-caret-right p-3"></i></a>
           </div>
           <br>
@@ -81,14 +81,15 @@
     </div>
   </section>
 
-
   <section id="about" class="about ">
     <div class="sm:flex items-center justify-center h-screen container">
-      <a class="sm:text-5xl text-2xl sm:mt-5 link mt-2 sm:px-4 m-2 px-4 border-l-8 decoration"><span>About me</span></a>
+      <a class="sm:text-5xl text-2xl sm:mt-5 link hover-underline-animation mt-2 sm:px-4 m-2 px-6 border-l-8 text-black decoration">About me</a>
       <p class="text-md sm:text-xl sm:space-x-2 space-x-0 sm:px-6 px-4 sm:py-6 py-2">
       Hello, I am a 17 year old <span> front-end web developer </span> and a tech geek from <span> India </span>, currently pursing Computer Engineering. 
       <br>
+      <br>
       I got interested in technology during the <span> COVID-19 </span> lockdown when everything was completely shut off, where I developed interest towards </span> Computers </span> , <span> Linux </span>and other stuff.
+  <br>
   <br>
   I work with <span> HTML </span> , <span> CSS </span>. I have a basic understanding of </span>C/C++ and JS</span>. I am currently learning </span>Haskell to try </span> functional programming </span> and </span> category theory </span>.
   <br>
@@ -103,68 +104,64 @@
   </section>
 
   <section id="projects"class="visible min-h-full">
-    <h1 class="sm:text-4xl mt-2 flex justify-center text-xl mb-6">Projects</h1>
-    <div class="justify-center mt-6 grid gap-5 auto-cols-auto m-6  sm:grid-cols-2"> 
-      <div class="card max-w-sm sm:mx-32 visible rounded overflow-hidden shadow-xl">
-        <div class="px-6 py-4">
+    <h1 class="sm:text-4xl mt-12 flex justify-center text-xl">Projects</h1>
+    <div class="justify-center mx-4 my-4 mt-6 mb-24 grid gap-5 sm:grid-cols-2"> 
+      <div class="card grid-col-2 max-w-sm sm:mx-40 visible rounded overflow-hidden drop-shadow-xl">
+        <div class="px-6  py-4">
           <div class="font-bold text-xl mb-2">Rxfetch</div>
           <p class="text-gray-800 text-base">
           Rxfetch is a very simple but clean looking fetch script.
           </p>
-          <button class="bg-blue-700 mt-2 rounded p-2"> <a class="text-white-300 hover:decoration-4 hover:underline" href="https://github.com/Mangeshrex/rxfetch">source</a></button>
+          <button class="bg-blue-700 mt-2 rounded p-2"> <a class="text-white-300 hover-underline-animation hover:decoration-4 hover:underline" href="https://github.com/Mangeshrex/rxfetch">source</a></button>
         </div>
       </div>
-      <div class="card max-w-sm sm:mx-20 visible rounded overflow-hidden shadow-lg">
+      <div class="card max-w-sm sm:mx-20 sm:mx-4 visible rounded overflow-hidden shadow-lg">
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2 ">Everblush</div>
           <p class="text-gray-800 text-base">
           Everblush is a dark, beautiful and vibrant colorscheme.
           </p>
-          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration  text-white-300  hover:decoration-4 hover:underline" href="https://github.com/Everblush/">source</a></button>
+          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration  text-white-300  hover-underline-animation hover:decoration-4 hover:underline" href="https://github.com/Everblush/">source</a></button>
         </div>
       </div>
-            <div class="card max-w-sm mt-2 sm:mx-32 visible rounded overflow-hidden shadow-lg">
+            <div class="card max-w-sm mt-2  sm:mx-40 visible rounded overflow-hidden shadow-lg">
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2 ">portfolio</div>
           <p class="text-gray-800 text-base">
               My personal portfolio.
           </p>
-          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration  text-white-300 hover:decoration-4 hover:underline " href="https://github.com/Mangeshrex/mangeshrex.github.io">source</a></button>
+          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration hover-underline-animation text-white-300 hover:decoration-4 hover:underline " href="https://github.com/Mangeshrex/mangeshrex.github.io">source</a></button>
         </div>
       </div>
-            <div class="card max-w-sm sm:mx-20 visible rounded overflow-hidden shadow-lg">
+      <div class="card max-w-sm sm:mx-20 sm:mx-2 visible rounded overflow-hidden shadow-lg">
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2 ">VoidWalls</div>
           <p class="text-gray-800 text-base">
            A forked project which has a several Void Linux wallpaper's.
           </p>
-          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration text-white-300 hover:decoration-4 hover:underline" href="https://github.com/Mangeshrex/voidwalls">source</a></button>
+          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration hover-underline-animation text-white-300 hover:decoration-4 hover:underline" href="https://github.com/Mangeshrex/voidwalls">source</a></button>
         </div>
       </div>
     </div>
     </div>
 
-    <div class="flex visible mb-8 justify-center">
-      <h1 class="text-xl sm:text-2zl"> These are some of my projects. </h1>
-    </div>
-  </section>
 
   <footer class="thanks visible ">
     <div class="p-4 shadow-lg md:px-6 md:py-8 ">
       <div class="sm:flex sm:justify-center sm:mx-12 mx-2 sm:justify-between">
         <a href="https://mangeshrex.tech"><img class="w-12 rounded-full h-12" src="./asset/ma.png"></a>
-        <ul class="flex flex-wrap items-center mb-6 text-sm sm:mb-0 ">
+        <ul class="flex flex-wrap items-center mb-6 text-sm text-white-300 sm:mb-0 ">
           <li>
-            <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+            <a href="#about" class="mr-4  md:mr-6">About</a>
             </li>
             <li>
-                <a href="https://t.me/mangeshrex" class="mr-4 hover:underline md:mr-6">Telegram</a>
+                <a href="https://t.me/mangeshrex" class="mr-4 md:mr-6">Telegram</a>
             </li>
             <li>
-                <a href="https://github.com/Mangeshrex" class="mr-4 hover:underline md:mr-6 ">Github</a>
+                <a href="https://github.com/Mangeshrex" class="mr-4 md:mr-6 ">Github</a>
             </li>
             <li>
-                <a href="" class="hover:underline">Discord</a>
+                <a href="" class="mr-4 md:mr-6 ">Discord</a>
             </li>
         </ul>
     </div>
@@ -173,8 +170,9 @@
       <h3>© 2022. Made by <span> Mangesh </span> using Tailwind CSS.</h3>
     </div>
   </footer>
+
   <script>
-    ScrollReveal().reveal(".welcome", { delay: 500 });
+    ScrollReveal().reveal(".welcome", { delay: 100 });
     ScrollReveal().reveal(".about", { delay: 500 });
     ScrollReveal().reveal(".projects", { delay: 500 });
   </script>

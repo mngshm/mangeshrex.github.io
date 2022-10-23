@@ -19,8 +19,6 @@
 
 html {
   visibility: hidden;
-  width: 100%;
-  height: 100%;
   background: #c8c8c8;
   scroll-behavior: smooth;
   backdrop-filter: blue(10px);
@@ -74,7 +72,7 @@ html {
 }
 
 .navbar {
-  background-color: transparent !important;
+  background-color: #c8c8c8 !important;
   color: #0d0d0d;
 }
 
@@ -253,8 +251,8 @@ hr {
   border-color: #0d0d0d;
 }
 
-#project {
-  font-family: "SFProDisplay";
+#project h1 {
+  font-family: "SFProMono";
   color: #0d0d0d;
 }
 
@@ -274,4 +272,32 @@ hr {
 .thanks {
   color: #dadada;
   background-color: #0d0d0d;
+}
+
+#gallery img {
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0d0d0d;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
