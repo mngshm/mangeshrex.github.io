@@ -10,6 +10,18 @@
   <link rel="stylesheet" href="./output.css" />
   <link rel="stylesheet" href="./index.js" />
 
+  <!-- script for checking the default theme mode-->
+  <script>
+    if (
+      localStorage.getItem('color-theme') === 'dark' ||
+      (!('color-theme' in localStorage) &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+  </script>
   <script src="https://unpkg.com/scrollreveal"></script>
   <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet" />
 </head>
@@ -29,7 +41,7 @@
                 >Home</a
               >
             </li>
-            ,
+                ,
             <li>
               <a
                 href="#about"
