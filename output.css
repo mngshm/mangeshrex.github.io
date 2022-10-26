@@ -681,10 +681,6 @@ hr {
   }
 }
 
-#about p {
-  max-width: 600px;
-}
-
 .about a {
   color: #0d0d0d !important;
 }
