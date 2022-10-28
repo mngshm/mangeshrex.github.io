@@ -18,8 +18,7 @@
 }
 
 html {
-  font-family: 'SFProDisplay'
-  visibility: hidden;
+  font-family: 'SFProDisplay';
   background: #c8c8c8;
   scroll-behavior: smooth;
   backdrop-filter: blue(10px);
@@ -253,9 +252,6 @@ hr {
   text-decoration: none;
   transition: 1s;
   color: #dadada;
-}
-.card a:hover { 
-
 }
 
 .thanks {

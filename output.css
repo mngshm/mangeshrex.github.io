@@ -523,7 +523,7 @@ video {
 }
 
 html {
-  visibility: hidden;
+  font-family: 'SFProDisplay';
   background: #c8c8c8;
   scroll-behavior: smooth;
   -webkit-backdrop-filter: blue(10px);
@@ -681,17 +681,8 @@ hr {
   }
 }
 
-.about a {
-  color: #0d0d0d !important;
-}
-
-.border-l-8 {
-  border-color: #0d0d0d;
-}
-
-#project h1 {
-  font-family: "SFProMono";
-  color: #0d0d0d;
+#about {
+  font-family: "SFProDisplay";
 }
 
 .card {
@@ -704,12 +695,13 @@ hr {
   color: #dadada;
 }
 
-.card a:hover {
-}
-
 .thanks {
   color: #dadada;
   background-color: #0d0d0d;
+}
+
+#projects{
+  font-family: "SFProDisplay";
 }
 
 #gallery img {

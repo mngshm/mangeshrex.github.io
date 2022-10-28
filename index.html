@@ -98,7 +98,7 @@
   <section id="about">
     <div class="visible h-full sm:min-h-screen">
       <div class+"sm:text-3xl sm:px-32">
-        <h1 class="text-2xl sm:text-3xl px-8 text-2xl font-bold sm:px-32">About</h1>
+        <h1 class="text-2xl sm:text-3xl px-8 font-bold sm:px-32">About</h1>
         <p class="sm:px-32 px-6 py-6 sm:text-xl">
         Hello, I am a 17 year old <span> front-end web developer </span> and a tech geek from <span> India </span>, currently pursing Computer Engineering. 
         <br>
@@ -114,9 +114,9 @@
         </p>
         <!----div class="flex flex-wrap"-->
         <div class="tech-stack sm:px-32 px-8 py-4 sm:py-4">
-          <h1 class="sm:text-3xl font-bold text-2xl">Tech stack</h1>
+          <h1 class="sm:text-3xl font-bold text-2xl mb-4">Tech stack</h1>
           <div class="justify-start flex flex-wrap">
-            <div class="sm:max-w-sm flex flex-wrap p-2 m-auto shadow-xl">
+            <div class="sm:max-w-sm border-2 border-slate-800 flex flex-wrap p-2 m-auto shadow-xl">
             <img class="rounded w-10 h-10" src="https://upload.wikimedia.org/wikipedia/commons/7/7a/JavaScript_unofficial_logo.svg" alt="js">
            <h4 class="sm:text-2xl text-xl p-2 m-auto">Javascript</h4>    
             </div>
@@ -153,7 +153,7 @@
     <h1 class="sm:text-4xl mt-12 flex justify-center text-xl">Projects</h1>
     <div class="justify-center mx-4 my-4 mt-6 mb-24 grid gap-5 sm:grid-cols-2"> 
       <div class="card grid-col-2 max-w-sm sm:mx-40 visible rounded overflow-hidden drop-shadow-xl">
-        <div class="px-6  py-4">
+        <div class="card-1 px-6 py-4">
           <div class="font-bold text-xl mb-2">Rxfetch</div>
           <p class="text-gray-800 text-base">
           Rxfetch is a very simple but clean looking fetch script.
@@ -161,16 +161,16 @@
           <button class="bg-blue-700 mt-2 rounded p-2"> <a class="text-white-300 hover-underline-animation hover:decoration-4 hover:underline" href="https://github.com/Mangeshrex/rxfetch">source</a></button>
         </div>
       </div>
-      <div class="card max-w-sm sm:mx-20 sm:mx-4 visible rounded overflow-hidden shadow-lg">
+      <div class="card card-2 max-w-sm sm:mx-20 1sm:mx-4 visible rounded overflow-hidden shadow-lg">
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2 ">Everblush</div>
           <p class="text-gray-800 text-base">
           Everblush is a dark, beautiful and vibrant colorscheme.
           </p>
-          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration  text-white-300  hover-underline-animation hover:decoration-4 hover:underline" href="https://github.com/Everblush/">source</a></button>
+          <button class="card card-3 bg-blue-700 mt-2 rounded p-2"><a class="decoration  text-white-300  hover-underline-animation hover:decoration-4 hover:underline" href="https://github.com/Everblush/">source</a></button>
         </div>
       </div>
-            <div class="card max-w-sm mt-2  sm:mx-40 visible rounded overflow-hidden shadow-lg">
+            <div class="card card-3 max-w-sm mt-2  sm:mx-40 visible rounded overflow-hidden shadow-lg">
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2 ">portfolio</div>
           <p class="text-gray-800 text-base">
@@ -179,7 +179,7 @@
           <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration hover-underline-animation text-white-300 hover:decoration-4 hover:underline " href="https://github.com/Mangeshrex/mangeshrex.github.io">source</a></button>
         </div>
       </div>
-      <div class="card max-w-sm sm:mx-20 sm:mx-2 visible rounded overflow-hidden shadow-lg">
+      <div class="card card-4 max-w-sm sm:mx-20 sm:mx-2 visible rounded overflow-hidden shadow-lg">
         <div class="px-6 py-4">
           <div class="font-bold text-xl mb-2 ">VoidWalls</div>
           <p class="text-gray-800 text-base">
@@ -190,13 +190,14 @@
       </div>
     </div>
     </div>
+  </section>
 
 
   <footer class="thanks visible ">
     <div class="p-4 shadow-lg md:px-6 md:py-8 ">
       <div class="sm:flex sm:justify-around sm:mx-12 mx-2 justify-evenly">
         <a href="https://mangeshrex.tech"><img class="w-12 rounded-full h-12" src="./asset/ma.png"></a>
-        <ul class="flex flex-wrap items-center mb-6 text-sm text-white-300 sm:mb-0 ">
+        <ul class="flex flex-wrap items-center mb-6 text-sm sm:text-md text-white-300 sm:mb-0 ">
           <li>
             <a href="#about" class="mr-4  md:mr-6">About</a>
             </li>
@@ -210,7 +211,7 @@
                 <a href="" class="mr-4 md:mr-6 ">Discord</a>
             </li>
             <li>
-              <h3>© 2022. Made by <span> Mangesh </span> using Tailwind CSS.</h3>
+              <h3>Copyright © 2022. Made by <span> Mangesh </span> using Tailwind CSS.</h3>
             </li>
         </ul>
     </div>
@@ -220,6 +221,10 @@
     ScrollReveal().reveal("#home", { delay: 100 });
     ScrollReveal().reveal("#about", { delay: 300 });
     ScrollReveal().reveal("#projects", { delay: 300 });
+    ScrollReveal().reveal(".card-1", {delay: 200}); 
+    ScrollReveal().reveal(".card-2", {delay: 300}); 
+    ScrollReveal().reveal(".card-3", {delay: 400}); 
+    ScrollReveal().reveal(".card-4", {delay: 500}); 
   </script>
   <script src="https://unpkg.com/phosphor-icons"></script>
 </body>
