@@ -27,41 +27,38 @@
 </head>
 
 <body>
-  <nav class="px-2 sm:px-4 fixed top-0 right-0 z-30 visible py-2.5 navbar">
-      <div class="container flex flex-wrap justify-end mx-auto">
+  <nav class="px-2 sm:px-4 sm:h-14 md:h-14 fixed top-0 sm:w-full w-full z-30 visible navbar">
+      <div class="container flex flex-wrap sm:justify-center justify-center mx-auto">
         <div class="hidden w-full md:block md:w-auto" id="navbar-default">
           <ul
-            class="flex flex-col p-4 mt-2 rounded-lg border md:flex-row md:space-x-2 md:mt-0 md:text-lg md:font-medium md:border-0"
+            class="flex flex-col sm:p-4 sm:mt-2 rounded-lg border md:flex-row md:space-x-2 space-x-0 md:mt-0 text-sm md:text-lg md:font-medium md:border-0"
           >
             <li>
               <a
                 href="#home"
-                class="block py-2 pr-4 hover-underline-animation pl-3 rounded md:bg-transparent md:p-0"
+                class="block py-2 pr-4 hover:text-blue-700 transition-all hover-underline-animation pl-3 rounded md:bg-transparent md:p-0"
                 aria-current="page"
                 >Home</a
               >
             </li>
-                ,
             <li>
               <a
                 href="#about"
-                class="block py-2 pr-4 pl-3 rounded md:hover:bg-transparent hover-underline-animation md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pr-4 pl-3 hover:text-blue-700 rounded md:hover:bg-transparent hover-underline-animation md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
                 >About</a
               >
             </li>
-            ,
             <li>
               <a
                 href="#projects"
-                class="block py-2 pr-4 pl-3 rounded hover-underline-animation md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pr-4 pl-3 hover:text-blue-700 rounded hover-underline-animation md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
                 >Projects</a
               >
             </li>
-            ,
             <li>
               <a
                 href="./photos.html"
-                class="block py-2 pr-4 pl-3 font-thin hover-underline-animation rounded md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
+                class="block py-2 pr-4 pl-3 hover:text-blue-700 font-thin hover-underline-animation rounded md:hover:bg-transparent md:border-0 md:hover:decoration-black md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:text-white md:dark:hover:bg-transparent"
                 >Photographs</a
               >
             </li>
@@ -147,48 +144,42 @@
     </div>
   </section>
 
-
-
-  <section id="projects"class="visible min-h-full">
-    <h1 class="sm:text-4xl mt-12 flex justify-center text-xl">Projects</h1>
-    <div class="justify-center mx-4 my-4 mt-6 mb-24 grid gap-5 sm:grid-cols-2"> 
-      <div class="card grid-col-2 max-w-sm sm:mx-40 visible rounded overflow-hidden drop-shadow-xl">
-        <div class="card-1 px-6 py-4">
-          <div class="font-bold text-xl mb-2">Rxfetch</div>
-          <p class="text-gray-800 text-base">
-          Rxfetch is a very simple but clean looking fetch script.
-          </p>
-          <button class="bg-blue-700 mt-2 rounded p-2"> <a class="text-white-300 hover-underline-animation hover:decoration-4 hover:underline" href="https://github.com/Mangeshrex/rxfetch">source</a></button>
+  <section id="projects" class="visible xl:min-h-screen">
+    <div class="">
+      <h1 class="sm:text-4xl mt-12 flex justify-center text-xl">Projects</h1>
+      <div
+        class="justify-center px-4 sm:my-4 sm:mt-6 sm:mb-24 mb-12 grid sm:grid-cols-2 sm:gap-4 grid-cols-1 gap-2 place-items-center">
+        <div class="max-w-sm card-1 rounded overflow-hidden shadow-lg">
+          <img class="w-full" src="./asset/card-1.png">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Rxfetch</div>
+            <p class="text-gray-700 mb-2 text-base">
+              Rxfetch is a system info program with some bling in it.
+            </p>
+            <a class="bg-blue-500 p-2 rounded" href="https://github.com/Mangeshrex/rxfetch">source</a>
+          </div>
+        </div>
+        <div class="max-w-sm card-2 rounded overflow-hidden shadow-lg">
+          <img class="w-full" src="./asset/card-3.png">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">Everblush</div>
+            <p class="text-gray-700 mb-2 text-base">
+              Everblush is a dark, beautiful and vibrant colorscheme supporting various programs.
+            </p>
+            <a class="bg-blue-500 p-2 rounded" href="https://github.com/Everblush/everblsh">source</a>
+          </div>
+        </div>
+        <div class="max-w-sm card-3 rounded overflow-hidden shadow-lg">
+          <img class="w-full" src="./asset/card-2.png">
+          <div class="px-6 py-4">
+            <div class="font-bold  text-xl mb-2">Dotfiles</div>
+            <p class="text-gray-700 mb-2 text-base">
+              Not really a project, but something you would like.
+            </p>
+            <a class="bg-blue-500 p-2 rounded" href="https://github.com/Mangeshrex/dotfiles">source</a>
+          </div>
         </div>
       </div>
-      <div class="card card-2 max-w-sm sm:mx-20 1sm:mx-4 visible rounded overflow-hidden shadow-lg">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2 ">Everblush</div>
-          <p class="text-gray-800 text-base">
-          Everblush is a dark, beautiful and vibrant colorscheme.
-          </p>
-          <button class="card card-3 bg-blue-700 mt-2 rounded p-2"><a class="decoration  text-white-300  hover-underline-animation hover:decoration-4 hover:underline" href="https://github.com/Everblush/">source</a></button>
-        </div>
-      </div>
-            <div class="card card-3 max-w-sm mt-2  sm:mx-40 visible rounded overflow-hidden shadow-lg">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2 ">portfolio</div>
-          <p class="text-gray-800 text-base">
-              My personal portfolio.
-          </p>
-          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration hover-underline-animation text-white-300 hover:decoration-4 hover:underline " href="https://github.com/Mangeshrex/mangeshrex.github.io">source</a></button>
-        </div>
-      </div>
-      <div class="card card-4 max-w-sm sm:mx-20 sm:mx-2 visible rounded overflow-hidden shadow-lg">
-        <div class="px-6 py-4">
-          <div class="font-bold text-xl mb-2 ">VoidWalls</div>
-          <p class="text-gray-800 text-base">
-           A forked project which has a several Void Linux wallpaper's.
-          </p>
-          <button class="bg-blue-700 mt-2 rounded p-2"><a class="decoration hover-underline-animation text-white-300 hover:decoration-4 hover:underline" href="https://github.com/Mangeshrex/voidwall">source</a></button>
-        </div>
-      </div>
-    </div>
     </div>
   </section>
 
@@ -224,7 +215,7 @@
     ScrollReveal().reveal(".card-1", {delay: 200}); 
     ScrollReveal().reveal(".card-2", {delay: 300}); 
     ScrollReveal().reveal(".card-3", {delay: 400}); 
-    ScrollReveal().reveal(".card-4", {delay: 500}); 
+    // ScrollReveal().reveal(".card-4", {delay: 500}); 
   </script>
   <script src="https://unpkg.com/phosphor-icons"></script>
 </body>

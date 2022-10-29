@@ -577,8 +577,9 @@ html {
 }
 
 .navbar {
-  background-color: transparent !important;
-  color: #0d0d0d;
+  transition: 0.5s;
+  background-color: #0d0d0d !important;
+  color: #c8c8c8;
 }
 
 span {
