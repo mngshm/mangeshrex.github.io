@@ -19,10 +19,10 @@
 
 html {
   font-family: 'SFProDisplay';
-  background: #c8c8c8;
+  /* background: #141b1e; */
   scroll-behavior: smooth;
   backdrop-filter: blue(10px);
-  color: black !important;
+  color: #dadada !important;
 }
 
 .asset {
@@ -34,34 +34,9 @@ html {
 .welcome {
   height: 100vh;
   position: relative;
-  background-color: #c8c8c8;
-  height: 100vh;
-}
+  background-image: linear-gradient(to bottom , #0d1417, #141b1e);
 
-.welcome::before {
-  content: "";
-  width: 50%;
-  height: 100px;
-  position: absolute;
-  top: -48px;
-  left: 0;
-  background: #c8c8c8;
-  transform: skewY(8deg);
-  z-index: -1;
 }
-
-.welcome::after {
-  content: "";
-  width: 50%;
-  height: 100px;
-  position: absolute;
-  top: -48px;
-  right: 0;
-  background: #c8c8c8;
-  transform: skewY(-8deg);
-  z-index: -1;
-}
-
 .container {
   font-family: 'SFProDisplay';
 }
@@ -74,51 +49,12 @@ html {
 .navbar {
   transition: 0.5s;
   background-color: transparent !important;
-  color: #0d0d0d;
+  color: #dadada;
   backdrop-filter: blur(4px);
 }
 
 span {
   color: #597eb0;
-}
-
-.bubble::after {
-  content: '';
-  border-top-left-radius: 50% 100%;
-  border-top-right-radius: 50% 100%;
-  position: absolute;
-  bottom: 0;
-  z-index: -1;
-  width: 80%;
-  background: linear-gradient(to bottom right, #67b0e8, #1e2528, #141b1e);
-  height: 10%;
-}
-
-@media (max-width: 500px) {
-  .bubble::after {
-    width: 100%;
-    height: 45%;
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-  }
-}
-
-@media (max-width: 700px) {
-  .bubble::after {
-    width: 100%;
-    height: 55%;
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-  }
-}
-
-@media (max-width: 1000px) {
-  .bubble::after {
-    width: 100%;
-    height: 60%;
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-  }
 }
 
 .from-left {
@@ -244,24 +180,27 @@ hr {
 }
 
 #about {
+  background-image: linear-gradient(180deg, #141b1e,#1e2528);
   font-family: "SFProDisplay";
 }
 .card {
-  background-color: #dadada;
+  background-color: #181f21;
 }
 
-.card a {
+.card-1, .card-2, .card-3 {
   text-decoration: none;
   transition: 1s;
+  background-color: #282f32;
   color: #dadada;
 }
 
 .thanks {
   color: #dadada;
-  background-color: #0d0d0d;
+  background-color: #141b1e;
 }
 
 #projects{
+  background-color: #1e2528;
   font-family: "SFProDisplay";
 }
 
@@ -283,7 +222,7 @@ hr {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #0d0d0d;
+  background-color: #dadada;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
