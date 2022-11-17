@@ -4,21 +4,21 @@
 
 @font-face {
   font-family: 'SFProDisplay';
-  src: url(./asset/SF-Pro-Display-Regular.ttf);
+  src: url(./asset/font/SF-Pro-Display-Regular.ttf);
 }
 
 @font-face {
   font-family: 'SFProMedium';
-  src: url(./asset/SF-Pro-Display-Medium.ttf);
+  src: url(./asset/font/SF-Pro-Display-Medium.ttf);
 }
 
 @font-face {
   font-family: 'SFProMono';
-  src: url(./asset/SFMono-Regular.otf);
+  src: url(./asset/font/SFMono-Regular.otf);
 }
 
 html {
-  font-family: 'SFProDisplay';
+  font-family: 'SFProMono';
   /* background: #141b1e; */
   scroll-behavior: smooth;
   backdrop-filter: blue(10px);
@@ -54,6 +54,7 @@ html {
 }
 
 span {
+  font-family: "SFProMedium";
   color: #597eb0;
 }
 
@@ -179,6 +180,9 @@ hr {
   }
 }
 
+.copyright {
+  font-family: 'SFProDisplay';
+}
 #about {
   background-image: linear-gradient(180deg, #141b1e,#1e2528);
   font-family: "SFProDisplay";
