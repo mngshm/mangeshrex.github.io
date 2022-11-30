@@ -53,6 +53,10 @@ html {
   backdrop-filter: blur(4px);
 }
 
+nav {
+  border-bottom: 1px solid #1e2528;
+}
+
 span {
   font-family: "SFProMedium";
   color: #597eb0;
