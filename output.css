@@ -505,30 +505,31 @@ video {
 }
 
 @font-face {
-  font-family: 'SFProDisplay';
+  font-family: 'General';
 
-  src: url(./asset/font/SF-Pro-Display-Regular.ttf);
+  src: url(./asset/font/GeneralSans-Medium.ttf);
 }
 
 @font-face {
-  font-family: 'SFProMedium';
+  font-family: 'GeneralL';
 
-  src: url(./asset/font/SF-Pro-Display-Medium.ttf);
+  src: url(./asset/font/GeneralSans-Light.ttf);
 }
 
 @font-face {
-  font-family: 'SFProMono';
+  font-family: 'GeneralBold';
 
-  src: url(./asset/font/SFMono-Regular.otf);
+  src: url(./asset/font/GeneralSans-Bold.ttf);
 }
 
 html {
-  font-family: 'SFProMono';
-  /* background: #141b1e; */
+  font-family: 'General';
+  /* background: black; */
   scroll-behavior: smooth;
   -webkit-backdrop-filter: blue(10px);
           backdrop-filter: blue(10px);
-  color: #dadada !important;
+  color: #c0c0cf !important;
+  background-color: #121213;
 }
 
 .asset {
@@ -538,31 +539,38 @@ html {
 }
 
 .welcome {
+  font-family: 'General';
   height: 100vh;
+  font-size: 80px;
   position: relative;
-  background-image: linear-gradient(to bottom , #0d1417, #141b1e);
+  /* background-image: linear-gradient(to bottom , #0d1417, black); */
 }
 
 .container {
-  font-family: 'SFProDisplay';
+  font-family: 'General';
 }
 
-.header h1 {
-  color: #597eb0;
-  font-family: "SFProMedium";
+.welcome h1 {
+  font-size: 80px !important;
+  font-family: "General";
 }
 
 .navbar {
+  font-family: 'General';
   transition: 0.5s;
   background-color: transparent !important;
-  color: #dadada;
+  color: #c0c0cf;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
 
 span {
-  font-family: "SFProMedium";
-  color: #597eb0;
+  font-family: "General";
+  color: #a2bed5 ;
+}
+
+.welcome h1 {
+  font-size:50px;
 }
 
 .from-left {
@@ -597,6 +605,20 @@ hr {
   animation: thread1 2s;
 }
 
+::-moz-selection {
+  color: black;
+  background: #121213;
+}
+
+::selection {
+  color: black;
+  background: #121213;
+}
+
+a:hover {
+  cursor: none;
+}
+
 @keyframes thread1 {
   from {
     width: 0%
@@ -623,33 +645,32 @@ hr {
 }
 
 .copyright {
-  font-family: 'SFProDisplay';
+  font-family: 'General';
 }
 
 #about {
-  background-image: linear-gradient(180deg, #141b1e,#1e2528);
-  font-family: "SFProDisplay";
+  /* background-image: linear-gradient(180deg, black,black); */
+  font-family: "General";
 }
 
 .card {
-  background-color: #181f21;
+  background-color:#1c1c1d;
 }
 
-.card-1, .card-2, .card-3 {
+.card-1, .card-2, .card-3  {
   text-decoration: none;
+  background-color: #1c1c1d;
   transition: 1s;
-  background-color: #282f32;
-  color: #dadada;
+  color: #c0c0cf;
 }
 
 .thanks {
-  color: #dadada;
-  background-color: #141b1e;
+  color: #c0c0cf;
+  background-color: #1c1c1d;
 }
 
 #projects{
-  background-color: #1e2528;
-  font-family: "SFProDisplay";
+  font-family: "General";
 }
 
 #gallery img {
@@ -670,7 +691,7 @@ hr {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #dadada;
+  background-color: #c0c0cf;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
