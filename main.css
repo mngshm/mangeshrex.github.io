@@ -40,14 +40,23 @@ html {
   /* background-image: linear-gradient(to bottom , #0d1417, black); */
 }
 
+.welcome h4 {
+  font-family: 'GeneralL';
+}
+@media (min-width: 576px){
+  .welcome {
+    font-size: 50px; 
+  }
+}
+
 .container {
   font-family: 'General';
 }
-
+/* 
 .welcome h1 {
-  font-size: 80px !important;
+  /* font-size: 80px !important; 
   font-family: "General";
-}
+   */
 
 .navbar {
   font-family: 'General';
@@ -102,13 +111,12 @@ hr {
 }
 
 ::selection {
-  color: black;
-  background: #121213;
+  color: #121213;
+  background: #9bdead;
 }
 
 a:hover {
   cursor: none;
-
 }
 
 @-webkit-keyframes thread1 {

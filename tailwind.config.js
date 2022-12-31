@@ -5,10 +5,16 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   darkMode: 'class',
   theme: {
+    fontSize: {
+      sm: '0.8rem',
+      base: '1rem',
+      xl: '1.25rem',
+      '9xl': '100.052rem',
+    },
     extend: {
       colors: {
         white: {
-          100:  "#e4e4e4",
+          100: "#e4e4e4",
           200: "#dfdfdf",
           300: "#dadada",
           400: "#d5d5d5",

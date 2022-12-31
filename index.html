@@ -27,26 +27,28 @@
 </head>
 
 <body>
-<nav class="navbar px-2 sm:px-4 py-2.5 rounded ">
-  <div class="container flex flex-wrap items-center justify-between mx-auto">
-    <a href="https://mangeshrex.tech" class="flex items-center">
-        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Mangeshrex</span>
-    </a>
-    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
-      <ul class="flex flex-col p-4 mt-4 border rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
-        <li>
-          <a href="#" class="block py-2 pl-3 hover-underline-animation pr-4  rounded  ">Home</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 hover-underline-animation  pr-4 rounded md:border-0 ">About</a>
-        </li>
-        <li>
-          <a href="#" class="block py-2 pl-3 pr-4  hover-underline-animation  rounded md:border-0 ">Projects</a>
-        </li>
-      </ul>
+  <nav class="navbar px-2 sm:px-4 py-2.5 rounded ">
+    <div class="container flex flex-wrap items-center justify-between mx-auto">
+      <a href="https://mangeshrex.tech" class="sm:flex m-1 items-center">
+        <!-- <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">MR.</span> -->
+        <img src="./asset/logo.svg" class="h-8 self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+      </a>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+        <ul
+          class="flex flex-col p-4 mt-4 border rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+          <li>
+            <a href="#" class="block py-2 pl-3 hover-underline-animation pr-4  rounded  ">Home /</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 hover-underline-animation  pr-4 rounded md:border-0 ">About /</a>
+          </li>
+          <li>
+            <a href="#" class="block py-2 pl-3 pr-4  hover-underline-animation  rounded md:border-0 ">Projects /</a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
 
   <!-- <section id="home" class="welcome sm:min-h-screen h-full">
@@ -74,14 +76,17 @@
     </div>
   </section> -->
 
-  <section class="welcome sm:max-h-full h-80">
+  <section class="welcome sm:max-h-full h-full">
     <div>
       <br>
-      <div class="flex sm:p-24 p-4 sm:justify-start justify-center absolute align-items-center sm:bottom-0">
+      <div class="flex sm:p-24 p-4 sm:justify-start justify-center align-items-center sm:bottom-0">
         <div class=" text-left ">
-          <div class=" text-4xl font-bold">
-            <h1 class="sm:text-9xl text-4xl">Hi, I'm <span style="background-color: #a2bedf; color: #121213;">Mangesh</span>.</h1>
-            <h1>A Geek and Explorer</h1>
+          <div class="font-bold">
+            <h1 class="text-base" style="font-size: 80px;">Hi, I am <span
+                style="background-color: #a2bedf; color: #121213; font-size: 80px">Mangesh</span>.</h1>
+            <h1 style="font-size: 80px">A Geek and Explorer</h1>
+            <h4 class="p-0 m-auto sm:text-2xl text-xl hover-underline-animation font-light"><a href="#projects">See my Works <i
+                  class="ph-arrow-right-thin"></i></a></h4>
           </div>
         </div>
       </div>
@@ -90,7 +95,7 @@
 
   <section id="about">
     <div class="visible h-full sm:min-h-auto">
-      <div class="sm:text-3xl sm:py-12">
+      <div class="sm:text-3xl sm:py-16">
         <h1 class="text-2xl sm:text-2xl px-8 font-bold sm:px-32">About</h1>
         <p class="sm:px-32 px-6 py-6 sm:text-xl">
           Hello, I am a 17 year old <span> front-end web developer </span> and a tech geek from <span> India </span>,
@@ -110,52 +115,15 @@
           <br>
           And, I love playing <span>Tabla</span> from a classic music aspect.
         </p>
-        <!----div class="flex flex-wrap"-->
-        <div class="tech-stack sm:px-32 px-8 py-4 sm:py-4">
-          <h1 class="sm:text-3xl font-bold text-2xl mb-4">Tech stack</h1>
-          <div class="justify-center flex flex-wrap">
-            <div class="sm:max-w-sm card flex border-round flex-wrap rounded-lg p-2 m-auto shadow-xl">
-              <img class="rounded w-10 h-8 flex justify-center"
-                src="https://upload.wikimedia.org/wikipedia/commons/7/7a/JavaScript_unofficial_logo.svg" alt="js">
-              <h4 class="sm:text-2xl text-xl p-2 m-auto">Javascript</h4>
-            </div>
-            <div class="ssm:max-w-sm card flex border-round flex-wrap rounded-lg p-2 m-auto">
-              <img class="rounded w-10 justify-center place-items-center h-10"
-                src="https://upload.wikimedia.org/wikipedia/commons/archive/a/a7/20220125121206%21React-icon.svg"
-                alt="react">
-              <h4 class="sm:text-2xl card text-xl p-2 m-auto">ReactJS</h4>
-            </div>
-            <div class="sm:max-w-sm card flex border-round flex-wrap rounded-lg p-2 m-auto shadow-xl">
-              <img class="rounded w-10 h-10 flex place-items-center "
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="tailwind">
-              <h4 class="sm:text-2xl text-xl p-2 m-auto">TailwindCSS</h4>
-            </div>
-            <div class="sm:max-w-sm card flex border-round flex-wrap rounded-lg p-2 m-auto shadow-xl">
-              <img class="rounded placae-items-center w-12 h-10"
-                src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="tailwind">
-              <h4 class="sm:text-2xl text-xl p-2 m-auto">Bootstrap</h4>
-            </div>
-            <div class="sm:max-w-sm card flex border-round flex-wrap rounded-lg p-2 m-auto shadow-xl">
-              <img class="rounded placae-items-center w-12 h-10"
-                src="https://upload.wikimedia.org/wikipedia/commons/archive/6/61/20110919194714%21HTML5_logo_and_wordmark.svg"
-                alt="tailwind">
-              <h4 class="sm:text-2xl card text-xl p-2 m-auto">HTML</h4>
-            </div>
-            <div class="sm:max-w-sm card flex border-round flex-wrap rounded-lg p-2 m-auto shadow-xl">
-              <img class="rounded placae-items-center w-12 h-10"
-                src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="tailwind">
-              <h4 class="sm:text-2xl text-xl p-2 m-auto">CSS</h4>
-            </div>
-          </div>
-        </div>
       </div>
+    </div>
   </section>
 
   <section id="projects" class="visible xl:min-h-screen">
     <div class=" pb-6 pt-4 ">
       <h1 class="sm:text-4xl flex justify-center mb-2 text-2xl">Projects</h1>
       <div
-        class="justify-center px-4 sm:my-4 sm:mt-6 sm:pb-22 mb-12 grid sm:grid-cols-2 sm:gap-2 grid-cols-1 gap-2 place-items-center">
+        class="justify-center px-4 sm:my-4 sm:mt-6 sm:pb-22 mb-12 grid sm:grid-cols-3 sm:gap-2 grid-cols-1 gap-2 place-items-center">
         <div class="max-w-sm  card-1 rounded-lg overflow-hidden shadow-xl">
           <img class="rounded-lg" height="600px" width="500px" src="./asset/card-1.png">
           <div class="px-6 py-4">
@@ -163,7 +131,7 @@
             <p class="text-gray-400 mb-2 text-base">
               Rxfetch is a system info program with some bling in it.
             </p>
-            <a class="underline" href="https://github.com/Mangeshrex/rxfetch">source</a>
+            <a class="underline flex justify-end" href="https://github.com/Mangeshrex/rxfetch">source</a>
           </div>
         </div>
         <div class="max-w-sm card-2  rounded-lg overflow-hidden shadow-xl">
@@ -173,7 +141,7 @@
             <p class="text-gray-400 mb-2 text-base">
               Everblush is a dark, beautiful and vibrant colorscheme supporting various programs.
             </p>
-            <a class="underline" href="https://github.com/Everblush/everblush">source</a>
+            <a class="underline flex justify-end" href="https://github.com/Mangeshrex/rxfetch">source</a>
           </div>
         </div>
         <div class="max-w-sm card-3  rounded-lg overflow-hidden shadow-xl">
@@ -181,9 +149,9 @@
           <div class="px-6 py-4">
             <div class="font-bold  text-xl mb-2">Dotfiles</div>
             <p class="text-gray-400 mb-4 text-base">
-              These are my ArchLinux DOtfiles, it's not a project but yeah you can check it.
+              These are my ArchLinux Dotfiles, it's not a project but yeah you can check it.
             </p>
-            <a class="underline " href="https://github.com/Mangeshrex/dotfiles">source</a>
+            <a class="underline flex justify-end" href="https://github.com/Mangeshrex/rxfetch">source</a>
           </div>
         </div>
       </div>
@@ -221,6 +189,15 @@
     ScrollReveal().reveal(".card-1", { delay: 200 });
     ScrollReveal().reveal(".card-2", { delay: 300 });
     ScrollReveal().reveal(".card-3", { delay: 400 });
+
+    function myFunction() {
+      var x = document.getElementById("navbar");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
     // ScrollReveal().reveal(".card-4", {delay: 500});
   </script>
   <script src="https://unpkg.com/phosphor-icons"></script>
