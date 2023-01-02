@@ -662,6 +662,12 @@ a:hover {
 #about {
   /* background-image: linear-gradient(180deg, black,black); */
   font-family: "General";
+  transform: skewY(-3deg);
+  background-color: #0d0d0e ;
+}
+
+.ab-container {
+  transform: skewY(3deg);
 }
 
 .card {
@@ -677,7 +683,7 @@ a:hover {
 
 .thanks {
   color: #c0c0cf;
-  background-color: #1c1c1d;
+  background-color: #0d0d0e;
 }
 
 #projects{
