@@ -40,9 +40,19 @@ html {
   /* background-image: linear-gradient(to bottom , #0d1417, black); */
 }
 
+@media (max-width: 576px){
+  .welcome h1 {
+    font-size: 60px !important;
+  }
+  .welcome span {
+    font-size: 60px !important;
+
+  }
+}
 .welcome h4 {
   font-family: 'GeneralL';
 }
+
 @media (min-width: 576px){
   .welcome {
     font-size: 50px; 
