@@ -18,6 +18,7 @@
 }
 
 html {
+  max-width: 1920px;
   font-family: 'General';
   /* background: black; */
   scroll-behavior: smooth;
@@ -75,7 +76,12 @@ html {
   color: #c0c0cf;
   backdrop-filter: blur(4px);
 }
-
+/* 
+.nav-container {
+  background-color: #1c1c1d !important;
+  backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+} */
 span {
   font-family: "General";
   color: #a2bed5 ;

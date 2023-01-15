@@ -432,7 +432,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(83 156 212 / 0.5);
+  --tw-ring-color: rgb(148 176 199 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -479,7 +479,7 @@ video {
   --tw-ring-inset:  ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
-  --tw-ring-color: rgb(83 156 212 / 0.5);
+  --tw-ring-color: rgb(148 176 199 / 0.5);
   --tw-ring-offset-shadow: 0 0 #0000;
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
@@ -523,6 +523,7 @@ video {
 }
 
 html {
+  max-width: 1920px;
   font-family: 'General';
   /* background: black; */
   scroll-behavior: smooth;
@@ -544,6 +545,16 @@ html {
   font-size: 80px;
   position: relative;
   /* background-image: linear-gradient(to bottom , #0d1417, black); */
+}
+
+@media (max-width: 576px){
+  .welcome h1 {
+    font-size: 60px !important;
+  }
+
+  .welcome span {
+    font-size: 60px !important;
+  }
 }
 
 .welcome h4 {
@@ -574,6 +585,13 @@ html {
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
+
+/* 
+.nav-container {
+  background-color: #1c1c1d !important;
+  backdrop-filter: blur(10px);
+  transform-style: preserve-3d;
+} */
 
 span {
   font-family: "General";
