@@ -4,23 +4,22 @@
 
 @font-face {
   font-family: 'General';
-  src: url(./asset/font/GeneralSans-Medium.ttf);
+  src: url(./components/asset/font/GeneralSans-Medium.ttf);
 }
 
 @font-face {
   font-family: 'GeneralL';
-  src: url(./asset/font/GeneralSans-Light.ttf);
+  src: url(./components/asset/font/GeneralSans-Light.ttf);
 }
 
 @font-face {
   font-family: 'GeneralBold';
-  src: url(./asset/font/GeneralSans-Bold.ttf);
+  src: url(./components/asset/font/GeneralSans-Bold.ttf);
 }
 
 html {
   max-width: 1920px;
   font-family: 'General';
-  /* background: black; */
   scroll-behavior: smooth;
   backdrop-filter: blue(10px);
   color: #c0c0cf !important;
@@ -35,8 +34,8 @@ html {
 
 .welcome {
   font-family: 'General';
-  height: 100vh;
-  font-size: 80px;
+  height:60vh;
+  font-size: 70px;
   position: relative;
   /* background-image: linear-gradient(to bottom , #0d1417, black); */
 }
@@ -87,45 +86,6 @@ span {
   color: #a2bed5 ;
 }
 
-.welcome h1 {
-  font-size:50px;
-}
-
-.from-left {
-  animation-name: from-left;
-  animation-delay: 0s;
-  animation-duration: 1s;
-}
-
-@keyframes from-left {
-  from {
-    margin-left: -20%;
-  }
-
-  to {
-    margin-left: 8rem;
-  }
-}
-
-.ph-caret-right {
-  background-color: #597eb0 !important;
-  border-radius: 100%;
-  color: #0d0d0d;
-}
-
-hr {
-  height: 0px;
-  background-color: #597eb0;
-  border: 1;
-}
-
-.thread {
-  -webkit-animation: thread1 2s;
-  -moz-animation: thread1 2s;
-  -o-animation: thread1 2s;
-  animation: thread1 2s;
-}
-
 ::selection {
   color: #121213;
   background: #9bdead;
@@ -135,102 +95,35 @@ a:hover {
   cursor: none;
 }
 
-@-webkit-keyframes thread1 {
-  from {
-    width: 0%
-  }
-  to {
-    width: 100%
-  }
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
 }
 
-@-moz-keyframes thread1 {
-  from {
-    width: 0%
-  }
-
-  to {
-    width: 100%
-  }
+.hover-underline-animation:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c0c0cf;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
 
-@-o-keyframes thread1 {
-  from {
-    width: 0%
-  }
-
-  to {
-    width: 100%
-  }
-}
-
-@keyframes thread1 {
-  from {
-    width: 0%
-  }
-
-  to {
-    width: 100%
-  }
-}
-
-.thread1 {
-  -webkit-animation: thread2 2s;
-  -moz-animation: thread2 2s;
-  -o-animation: thread2 2s;
-  animation: thread2 2s;
-  width: 0px;
-}
-
-@-webkit-keyframes thread2 {
-  from {
-    width: 100%
-  }
-
-  to {
-    width: 0%
-  }
-}
-
-@-moz-keyframes thread2 {
-  from {
-    width: 10%
-  }
-
-  to {
-    width: 0%
-  }
-}
-
-@-o-keyframes thread2 {
-  from {
-    width: 100%
-  }
-
-  to {
-    width: 0%
-  }
-}
-
-@keyframes thread2 {
-  from {
-    width: 100%
-  }
-
-  to {
-    width: 0%
-  }
-}
-
-.copyright {
-  font-family: 'General';
+.hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 #about {
   /* background-image: linear-gradient(180deg, black,black); */
   font-family: "General";
   transform: skewY(-3deg);
-  background-color: #0d0d0e ;
+  background-color: #0d0d0e;
 }
 
 .ab-container {
@@ -283,4 +176,9 @@ a:hover {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.thanks {
+  color: #c0c0cf;
+  background-color: #0d0d0e;
 }

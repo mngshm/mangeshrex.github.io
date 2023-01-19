@@ -1,19 +1,44 @@
 {
+  "name": "portfolio-react",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "autoprefixer": "^10.4.12",
-    "flowbite": "^1.5.3",
-    "postcss": "^8.4.18",
-    "tailwindcss": "^3.1.8"
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "scrollreveal": "^4.0.9",
+    "web-vitals": "^2.1.4"
   },
-  "name": "port",
-  "version": "1.0.0",
-  "main": "tailwind.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "tailwind:watch": "tsc -w -p tailwind.tsconfig.json;tailwind -m -w -i src/styles/global.css -c tailwind.config.js",
-    "tailwind:build": "tsc -p tailwind.tsconfig.json;tailwind -m -i src/styles/global.css -c tailwind.config.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.2.4"
+  }
 }

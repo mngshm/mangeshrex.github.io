@@ -1,16 +1,8 @@
-const colors = require('tailwindcss/colors') 
-
 /* @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   darkMode: 'class',
   theme: {
-    fontSize: {
-      sm: '0.8rem',
-      base: '1rem',
-      xl: '1.25rem',
-      '9xl': '100.052rem',
-    },
     extend: {
       colors: {
         white: {
@@ -22,7 +14,7 @@ module.exports = {
           600: "#ababba",
           700: "#a4a4b3"
         },
-        black: "#0d0d0d",
+        black: "#121213",
         blue: {
           100: "#b0cce3",
           200: "#a9c5dc",
@@ -32,6 +24,13 @@ module.exports = {
           600: "#8da9c0",
           700: "#86a2b9",
         },
+      },
+      fontSize: {
+        '8xl': ['6.50rem', {
+          lineHeight: '7.25rem',
+          letterSpacing: '-0.02em',
+          fontWeight: '700',
+        }],
       },
     },
   },
