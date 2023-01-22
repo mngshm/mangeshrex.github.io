@@ -1,0 +1,73 @@
+
+.dark {
+    background-color: #0d0d0e;
+    color: #c0c0cf;
+}
+
+.light {
+    background-color: #c0c0cf;
+    color: #0d0d0e;
+}
+
+[theme="light"] {
+    --fg: #414b57;
+    --bg: #fff;
+    --accent: #c0e4fe;
+    --volumebg: #cbefff;
+    --inactiveStroke: #414b57;
+    --activeStroke: #ff8787;
+    --activeBar: #414b57;
+    --timerfg: #414b57;
+    --bg-alt: #fff;
+    --btnBg: #414b57;
+    --btnFg: #fff;
+    --btnBg2: #9fc3dd;
+    --btnFg2: #414b57;
+    --themeToggleBg: #414b57;
+    --themeToggleFg: #fff;
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --todolistBg: #fff;
+    --todoBg: #f8f8f8;
+    --red: #f27373;
+    --blue: #90b4ce;
+    --grey: #b6b6b6;
+    --green: #85cea9;
+    --sidebarSelected: #f5f5f5;
+    --sidebarBorder: #9c9c9c;
+    --todoInputBox: #c0e4fe;
+    --todoInputBg: #fff;
+    --delTodosBtnBg: #414b57;
+    --delTodosBtnFg: #fff;
+    --todoTitleBorder: #d3d3d3;
+  }
+  
+  [theme="dark"] {
+    --fg: #dadada;
+    --bg: #181f21;
+    --bg-alt: #1d2426;
+    --accent: #22292b;
+    --volumebg: #22292b;
+    --inactiveStroke: #181f21;
+    --activeStroke: #77aed7;
+    --activeBar: #77aed7;
+    --timerfg: #77aed7;
+    --btnBg: #32393b;
+    --btnFg: #dadada;
+    --btnBg2: #32393b;
+    --btnFg2: #ef7d7d;
+    --shadow: none;
+    --themeToggleBg: #293032;
+    --themeToggleFg: #77aed7;
+    --todolistBg: #22292b;
+    --todoBg: #293032;
+    --red: #ef7d7d;
+    --blue: #77aed7;
+    --grey: #5d5d67;
+    --green: #9bdead;
+    --sidebarSelected: #252c2e;
+    --todoInputBox: #1d2426;
+    --todoInputBg: #293032;
+    --delTodosBtnBg: #31313b;
+    --delTodosBtnFg: #77aed7;
+    --todoTitleBorder: #3f4648;
+  }

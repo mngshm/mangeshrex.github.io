@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "./darkMode.css"; 
+
 @font-face {
   font-family: 'General';
   src: url(./components/asset/font/GeneralSans-Medium.ttf);
@@ -34,34 +36,37 @@ html {
 
 .welcome {
   font-family: 'General';
-  height:60vh;
+  height: 60vh;
   font-size: 70px;
   position: relative;
   /* background-image: linear-gradient(to bottom , #0d1417, black); */
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .welcome h1 {
     font-size: 60px !important;
   }
+
   .welcome span {
     font-size: 60px !important;
 
   }
 }
+
 .welcome h4 {
   font-family: 'GeneralL';
 }
 
-@media (min-width: 576px){
+@media (min-width: 576px) {
   .welcome {
-    font-size: 50px; 
+    font-size: 50px;
   }
 }
 
 .container {
   font-family: 'General';
 }
+
 /* 
 .welcome h1 {
   /* font-size: 80px !important; 
@@ -72,9 +77,9 @@ html {
   font-family: 'General';
   transition: 0.5s;
   background-color: transparent !important;
-  color: #c0c0cf;
   backdrop-filter: blur(4px);
 }
+
 /* 
 .nav-container {
   background-color: #1c1c1d !important;
@@ -83,7 +88,7 @@ html {
 } */
 span {
   font-family: "General";
-  color: #a2bed5 ;
+  /* color: #a2bed5; */
 }
 
 ::selection {
@@ -122,37 +127,16 @@ a:hover {
 #about {
   /* background-image: linear-gradient(180deg, black,black); */
   font-family: "General";
-  transform: skewY(-3deg);
-  background-color: #0d0d0e;
+  /* transform: skewY(-3deg); */
+  /* background-color: #0d0d0e; */
 }
 
 .ab-container {
-  transform: skewY(3deg);
+  /* transform: skewY(3deg); */
 }
 
-.card {
-  background-color:#1c1c1d;
-}
-
-.card-1, .card-2, .card-3  {
-  text-decoration: none;
-  background-color: #1c1c1d;
-  transition: 1s;
-  color: #c0c0cf;
-}
-
-.thanks {
-  color: #c0c0cf;
-  background-color: #0d0d0e;
-}
-
-#projects{
+#projects {
   font-family: "General";
-}
-
-#gallery img {
-  max-height: 500px;
-  max-width: 500px;
 }
 
 .hover-underline-animation {
@@ -168,7 +152,7 @@ a:hover {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #c0c0cf;
+  /* background-color: #c0c0cf ; */
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -176,9 +160,4 @@ a:hover {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
-}
-
-.thanks {
-  color: #c0c0cf;
-  background-color: #0d0d0e;
 }
