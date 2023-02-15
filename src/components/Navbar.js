@@ -2,55 +2,89 @@ import React, { useState, useEffect } from 'react';
 import logo from './asset/ma.png';
 import '../App.css';
 import '../darkMode.css';
-import { Sun, Moon } from 'phosphor-react';
+import {Sun, Moon} from 'phosphor-react';
 
 function Navbar() {
   const [theme, setTheme] = useState('dark');
-  // const toggleTheme = () => {
-  //   // if (theme === 'light') {
-  //   //   setTheme('dark');
-  //   // } else {
-  //   //   setTheme('light');
-  //   // }
-
-  // };
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
 
+  const [showMenu, setShowMenu] = useState(false);
+
   return (
     <nav className="navbar px-2 sm:px-4 py-4">
-      <div className="nav-container flex flex-wrap items-center rounded-xl sm:justify-between mx-auto">
-        <a href="https://mangeshrex.tech" className="sm:flex m-1 px-2 items-center">
-          <img className="w-10 animate-pulse rounded-full h-10" src={logo} />
+      <div className="nav-container flex flex-wrap items-center rounded-xl sm:justify-between justify-between mx-auto">
+        <a href="https://mangeshrex.tech" className="sm:flex  m-1 px-2 items-center">
+          <img className="w-10 animate-pulse rounded-full h-10" src={logo} alt="avatar" />
         </a>
-        <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-          <ul className="flex uppercase flex-col p-4 mt-4 border rounded-lg  md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0 ">
+        <div className="sm:hidden block transition-all z-40" onClick={() => setShowMenu(!showMenu)}>
+          <div className="space-y-2 bg-black p-2 rounded-lg">
+            <span className="block w-5 h-0.5 bg-white-400"></span>
+            <span className="block w-8 h-0.5 bg-white-400"></span>
+            <span className="block w-3 h-0.5 bg-white-400"></span>
+          </div>
+          <>
+            {showMenu && (
+              <ul className="trnsition-all px-4 dark:bg-black bg-white-200 dark:text-white block -ml-12 m-2 p-2 absolute flex-col md:flex-row d:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0  ">
+                <li>
+                  <a href="#home" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded  ">Home</a>
+                </li>
+                <li>
+                  <a href="#about" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded md:border-0 ">About</a>
+                </li>
+                <li>
+                  <a href="https://mangeshrex.tech/blog" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded md:border-0 ">Blog</a>
+                </li>
+                <li>
+                  <a href="#projects" className="hidden sm:flex py-2 pl-2  hover-underline-animation  rounded md:border-0 ">Projects</a>
+                </li>
+                <li>
+                  <>
+                    {theme === 'light' &&
+                      (
+                        <div className='p-2 bg-blue-600 py-2 rounded-full'>
+                          <Moon size={20} weight='fill' onClick={() => setTheme('dark')} />
+                        </div>
+                      )}
+                    {theme === 'dark' &&
+                      (
+                        <div className='p-2 bg-blue-600 py-2 dark:bg-blue-700 w-auto rounded-full'>
+                          <Sun size={20} weight='fill' onClick={() => setTheme("light")} />
+                        </div>
+                      )}
+                  </>
+                </li>
+              </ul>
+            )}
+          </>
+        </div>
+        <div className="hidden w-full sm:w-auto sm:flex-grow sm:flex sm:justify-end sm:items-center" id="navContent" aria-labelledby="navToggle">
+          <ul className="flex uppercase flex-col p-4 mt-4 rounded-lg  md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0 ">
             <li>
-              <a href="#home" className="block py-2 pl-2 hover-underline-animation pr-2  rounded  ">Home</a>
+              <a href="#home" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded  ">Home</a>
             </li>
             <li>
-              <a href="#about" className="block py-2 pl-2 hover-underline-animation  pr-2 rounded md:border-0 ">About</a>
+              <a href="#about" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded md:border-0 ">About</a>
             </li>
             <li>
-              <a href="https://mangeshrex.tech/blog" className="block py-2 pl-2 hover-underline-animation  pr-2 rounded md:border-0 ">Blog</a>
+              <a href="https://mangeshrex.tech/blog" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded md:border-0 ">Blog</a>
             </li>
             <li>
-              <a href="#projects" className="block py-2 pl-2 pr-2  hover-underline-animation  rounded md:border-0 ">Projects</a>
+              <a href="#projects" className="hidden sm:flex py-2 pl-2  hover-underline-animation  rounded md:border-0 ">Projects</a>
             </li>
             <li>
-              {/* <button onClick={toggleTheme}></button> */}
               <>
                 {theme === 'light' &&
                   (
-                    <div className='p-2 bg-blue-600 rounded-full'>
+                    <div className='p-2 bg-blue-600 py-2 rounded-full'>
                       <Moon size={20} weight='fill' onClick={() => setTheme('dark')} />
                     </div>
                   )}
                 {theme === 'dark' &&
                   (
-                    <div className='p-2 bg-blue-600 dark:bg-blue-700 rounded-full'>
-                    <Sun size={20} weight='fill' onClick={() => setTheme("light")} />
+                    <div className='p-2 bg-blue-600 py-2 dark:bg-blue-700 py-2 rounded-full'>
+                      <Sun size={20} weight='fill' onClick={() => setTheme("light")} />
                     </div>
                   )}
               </>
@@ -58,7 +92,7 @@ function Navbar() {
           </ul>
         </div>
       </div>
-    </nav>
+    </nav >
   );
 }
 

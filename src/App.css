@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./darkMode.css"; 
+@import "./darkMode.css";
 
 @font-face {
   font-family: 'General';
@@ -20,7 +20,6 @@
 }
 
 html {
-  max-width: 1920px;
   font-family: 'General';
   scroll-behavior: smooth;
   backdrop-filter: blue(10px);
@@ -76,16 +75,10 @@ html {
 .navbar {
   font-family: 'General';
   transition: 0.5s;
-  background-color: transparent !important;
-  backdrop-filter: blur(4px);
+  /* background-color: transparent !important; */
+  /* backdrop-filter: blur(4px); */
 }
 
-/* 
-.nav-container {
-  background-color: #1c1c1d !important;
-  backdrop-filter: blur(10px);
-  transform-style: preserve-3d;
-} */
 span {
   font-family: "General";
   /* color: #a2bed5; */
@@ -95,11 +88,6 @@ span {
   color: #121213;
   background: #9bdead;
 }
-
-a:hover {
-  cursor: none;
-}
-
 
 .hover-underline-animation {
   display: inline-block;
@@ -131,12 +119,14 @@ a:hover {
   /* background-color: #0d0d0e; */
 }
 
-.ab-container {
-  /* transform: skewY(3deg); */
-}
-
 #projects {
   font-family: "General";
+}
+
+#projects a:hover {
+  transition: 0.2s ease-out;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
 }
 
 .hover-underline-animation {
@@ -160,4 +150,12 @@ a:hover {
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+.gli {
+  font-family: "General";
+}
+
+.thanks {
+  font-family: "General";
 }

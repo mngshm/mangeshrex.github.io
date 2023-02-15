@@ -4,10 +4,10 @@ import '../App.css';
 function About() {
   return (
     <section id='about'>
-      <div class="-skew-y-3 dark:bg-[#121213] bg-white-500 ab-container px-6 py-6 visible h-full sm:min-h-auto">
-        <div class="skew-y-3 sm:text-3xl sm:py-16">
+      <div class="ab-container px-6 py-6 visible h-full sm:min-h-auto">
+        <div class="sm:text-3xl sm:py-16">
           <h1 class="text-2xl sm:text-4xl px-6 font-bold sm:px-32">About</h1>
-          <p class="sm:px-32 px-6 py-6 sm:text-xl">
+          <p class="sm:px-32 px-6 py-6 sm:text-xl ">
             Hello! I am a 17-year-old front-end web developer and a tech geek from India, currently pursuing a degree in  <span>Computer Engineering</span>.
             I got interested in technology during the COVID-19 lockdown, when everything was completely shut off, and I
             developed an interest in computers and <span>Linux</span>.

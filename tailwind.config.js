@@ -24,6 +24,7 @@ module.exports = {
           500: "#94b0c7",
           600: "#8da9c0",
           700: "#86a2b9",
+          800: "#8eaac1",
         },
       },
       fontSize: {

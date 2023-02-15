@@ -1,32 +1,30 @@
 import React from 'react';
-import logo from './asset/ma.png';
-
+import { CaretRight, CaretLeft } from 'phosphor-react';
 export default function Footer() {
     return (
-        <footer className="thanks dark:bg-black bg-white-500 visible ">
-            <div className="p-4 md:px-6 md:py-8 ">
-                <div className="sm:flex sm:mx-12 justify-evenly">
-                    <div className="flex flex-nowrap sm:justify-center">
-                        <a href="https://mangeshrex.tech"><img className="w-12 animate-pulse rounded-full h-12" src={logo} /></a>
-                    </div>
-                    <ul className="flex flex-nowrap sm:justify-end place-items-center mb-6 text-sm sm:text-md sm:mb-0 ">
-                        <li>
-                            <a href="#about" className="mr-4 hover-underline-animation md:mr-6">About</a>
-                        </li>
-                        <li>
-                            <a href="https://t.me/mangeshrex" className="mr-4 hover-underline-animation md:mr-6">Telegram</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/Mangeshrex" className="mr-4 hover-underline-animation  md:mr-6 ">Github</a>
-                        </li>
-                        <li>
-                            <a href="https://discord.com/users/854017461958869023" className="mr-4 hover-underline-animation md:mr-6 ">Discord</a>
-                        </li>
-                    </ul>
-                </div>
-                <h3 className="flex sm:justify-center space-x-2  ">Copyright © 2022 Reserved</h3>
-            </div>
-        </footer>
+        <>
 
+            <footer className="thanks visible ">
+
+                <div className='gli '>
+                    <div className='flex sm:justify-around flex-col sm:flex-row space-y-2 sm:space-y-0 p-4'>
+                        <div className='flex flex-col'>
+                            <h1>Mangesh Mane</h1>
+                            <h1>Front End Enthusiast</h1>
+                        </div>
+                        <div className='flex flex-row space-x-2'>
+                            <a className="hover-underline-animation p-0" href="https://github.com/Mangeshrex">Github</a>,
+                            <a className="hover-underline-animation p-0" href="https://discord.com/users/854017461958869023">Discord</a>,
+                            <a className="hover-underline-animation p-0" href="https://t.me/mangeshrex">Telegram</a>,
+                        </div>
+                        <div className='flex flex-row space-x-2'>
+                            <a className="hover-underline-animation p-0" href="https://gnulinuxindia.org/direct.html?name=mangeshrex&dir=prev"><CaretLeft size={20}/> </a>
+                            <a className="hover-underline-animation p-0" href="https://gnulinuxindia.org/members.html/">WEBRING</a>
+                            <a className="hover-underline-animation p-0" href="https://gnulinuxindia.org/direct.html?name=mangeshrex&dir=next"><CaretRight size={20}/></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </>
     );
 }

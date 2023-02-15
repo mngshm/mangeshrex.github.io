@@ -1,61 +1,52 @@
+
 import React from 'react';
 import '../App.css';
-import Rxfetch from './asset/card-1.png';
-import Dotfiles from './asset/card-2.png';
-import Everblush from './asset/card-3.png';
+// import { Icon } from '@iconify/react';
 
 function Projects() {
     return (
-        <div id="projects" className="visible xl:min-h-screen xl:max-w-screen-2xl">
-            <div className="pb-6 pt-4">
-                <h1 className="sm:text-4xl flex justify-center p-5 mb-2 sm:mt-6 text-2xl">Projects</h1>
-                <div className="sm:justify-center px-4 sm:my-4 sm:mt-6 sm:pb-22 mb-12 grid sm:grid-cols-2 sm:-gap-4 place-items-center">
-                    <div className="max-w-md bg-white-500 dark:bg-black card-1 rounded-lg overflow-hidden ">
-                        <img className="rounded-lg" height="600px" width="500px" alt='thumbnail' src={Rxfetch} />
-                        <div className="px-6 py-4">
-                            <div className="font-bold text-xl mb-2">Rxfetch</div>
-                            <p className="text-black dark:text-white-300 mb-2 text-base">
-                                Rxfetch is a system info program with some bling in it.
-                            </p>
-                            <button className="button text-black dark:bg-blue-300  bg-blue-500 hover:bg-blue-700 hover:transition-all p-2 rounded-md">
-                                <a className="flex" href="https://github.com/Mangeshrex/rxfetch">
-                                    <h4 className="text-black">source</h4>
-                                </a>
-                            </button>
-                        </div>
-                    </div>
+        <section className='h-full sm:h-full'>
 
-                    <div className="max-w-md bg-white-500 dark:bg-black card-1 rounded-lg overflow-hidden ">
-                        <img className="rounded-lg" alt="thumbnail" height="500px" width="500px" src={Everblush} />
-                        <div className="px-6 py-4">
-                            <div className="font-bold text-xl mb-2">Everblush</div>
-                            <p className="text-black dark:text-white-300 mb-2 text-base">
-                                Everblush is a dark, beautiful and vibrant colorscheme supporting various programs.
-                            </p>
-                            <button className="button text-black dark:bg-blue-300  bg-blue-500 hover:bg-blue-700 hover:transition-all p-2 rounded-md">
-                                <a className=" flex justify-end" href="https://github.com/Mangeshrex/rxfetch">
-                                    <h4 className="text-black">source</h4>
-                                </a>
-                            </button>
-                        </div>
-                    </div>
-                    <div className="max-w-md bg-white-500 dark:bg-black card-1 rounded-lg overflow-hidden ">
-                        <img className="rounded-lg" height="500px" width="500px" alt='thumbnail' src={Dotfiles} />
-                        <div className="px-6 py-4">
-                            <div className="font-bold  text-xl mb-2">Dotfiles</div>
-                            <p className="text-black dark:text-white-300 mb-2 text-base">
-                                These are my ArchLinux Dotfiles, it's not a project but yeah you can check it.
-                            </p>
-                            <button className="button text-black dark:bg-blue-300  bg-blue-500 hover:bg-blue-700 hover:transition-all p-2 rounded-md">
-                                <a className="flex justify-end" href="https://github.com/Mangeshrex/rxfetch">
-                                    <h4 className="text-black">source</h4>
-                                </a>
-                            </button>
-                        </div>
+            <div id="projects" className=" -skew-y-3 mb-14 mt-6 dark:bg-[#121213] bg-white-300 visible">
+                <div className="skew-y-3  py-12 ">
+                    <div className='flex justify-center m-2 p-4 flex-col projects'>
+                        <h1 className="sm:text-4xl flex font-bold justify-left sm:ml-44 p-5 mb-2 text-2xl">Projects</h1>
+                        <a href="https://github.com/mangeshrex/rxfetch" className='p-4 m-2 '>
+                            <div className="flex justify-around ">
+                                <h1 className='sm:text-3xl text-xl 2xl:text-4xl text-bold'>
+                                    01/
+                                </h1>
+                                <p className='sm:text-xl font-thin sm:max-w-[500px] max-w-auto px-4 sm:p-0'>
+                                    <span>Rxfetch</span> is a system info program with some bling in it.
+                                    Being my first github repo it was very fun.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/Everblush" className='p-4 m-2 '>
+                            <div className="flex justify-around ">
+                                <h1 className='sm:text-3xl text-xl 2xl:text-4xl text-bold'>
+                                    02/
+                                </h1>
+                                <p className='sm:text-xl font-thin sm:max-w-[500px] max-w-auto px-4 sm:p-0'>
+                                    <span>Everblush</span> is a beautiful yet vibrant theme, which I worked on for a couple of months
+                                    and successfully got it on platforms like Neovim, Obsidian, VSCode, Emacs, and many others.
+                                </p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/mangeshrex/rxfetch" className='p-4 m-2'>
+                            <div className="flex justify-around ">
+                                <h1 className='sm:text-3xl text-xl 2xl:text-4xl text-bold'>
+                                    03/
+                                </h1>
+                                <p className='sm:text-xl font-thin sm:max-w-[500px] max-w-auto px-4 sm:p-0'>
+                                    This 'Lil Website of Mine, which I made while learning ReactJS.
+                                </p>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
 
