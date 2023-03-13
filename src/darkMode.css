@@ -1,11 +1,10 @@
-
 .dark {
-    background-color: #0d0d0e;
+    background-color: #030303;
     color: #c0c0cf;
 }
 
 .light {
     background-color: #b2b2c1;
-    color: #0d0d0e;
-    border-color: #0d0d0e;
+    color: #030303;
+    border-color: #030303;
 }

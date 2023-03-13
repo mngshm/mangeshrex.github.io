@@ -3,6 +3,7 @@ import Welcome from './components/Welcome.js';
 import About from './components/About.js';
 import Projects from './components/Projects.js';
 import Footer from './components/Footer.js';
+import Service from './components/services.js';
 import React from 'react';
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -13,6 +14,7 @@ function App() {
       <Welcome />
       <About />
       <Projects />
+      <Service />
       <Footer />
     </div>
   );

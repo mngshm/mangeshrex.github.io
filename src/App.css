@@ -19,6 +19,10 @@
   src: url(./components/asset/font/GeneralSans-Bold.ttf);
 }
 
+.text--fading[data-scroll='out'] .char {
+  opacity: 0;
+}
+
 html {
   font-family: 'General';
   scroll-behavior: smooth;
@@ -104,7 +108,7 @@ span {
   left: 0;
   background-color: #c0c0cf;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-in;
 }
 
 .hover-underline-animation:hover:after {

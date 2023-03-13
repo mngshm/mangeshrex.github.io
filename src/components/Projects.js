@@ -7,11 +7,11 @@ function Projects() {
     return (
         <section className='h-full sm:h-full'>
 
-            <div id="projects" className=" -skew-y-3 mb-14 mt-6 dark:bg-[#121213] bg-white-300 visible">
+            <div id="projects" className=" -skew-y-3 mb-14 mt-6 dark:bg-[#060607] bg-white-300 visible">
                 <div className="skew-y-3  py-12 ">
                     <div className='flex justify-center m-2 p-4 flex-col projects'>
                         <h1 className="sm:text-4xl flex font-bold justify-left sm:ml-44 p-5 mb-2 text-2xl">Projects</h1>
-                        <a href="https://github.com/mangeshrex/rxfetch" className='p-4 m-2 '>
+                        <a href="https://github.com/mangeshrex/rxfetch" className='p-4 m-2'>
                             <div className="flex justify-around ">
                                 <h1 className='sm:text-3xl text-xl 2xl:text-4xl text-bold'>
                                     01/
