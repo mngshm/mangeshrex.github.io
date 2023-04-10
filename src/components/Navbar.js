@@ -26,7 +26,7 @@ function Navbar() {
           </div>
           <>
             {showMenu && (
-              <ul className="trnsition-all px-4 dark:bg-black bg-white-200 dark:text-white block -ml-12 m-2 p-2 absolute flex-col md:flex-row d:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0  ">
+              <ul className="trnsition-all px-4 dark:bg-black bg-white-200 dark:text-white block -ml-12 m-2 p-2 absolute flex-col md:flex-row d:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0">
                 <li>
                   <a href="#home" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded  ">Home</a>
                 </li>
