@@ -4,16 +4,22 @@ import '../App.css';
 export default function Welcome() {
   return (
     <div id="home" className="welcome sm:h-screen 2xl:w-sm">
-      <div className="flex m-auto items-center justify-center sm:px-24 sm:py-24 p-4 sm:justify-start absolute sm:bottom-0">
-        <div className="sm:text-left text-left">
-          <div className="font-bold  items-centerbe">
-            <h1 className="sm:text-8xl  2xl:text-[200px] ">Hi, I am <span style={{ 'background-color': '#a2bed5', 'color': '#121213' }}>Mangesh</span>.</h1>
-            <h1 className='sm:text-8xl  2xl:text-[200px] '>A <span>Geek</span> and <span>Explorer</span></h1>
-            <h4 className="p-0 text-xl hover-underline-animation font-light"><a href="#projects">See my
-              Works <i className="ph-arrow-right-thin"></i></a></h4>
-          </div>
+      <div className="m-auto sm:bloc flex flex-col h-screen top-0 bottom-0 justify-center sm:px-24 sm:py-24 p-4 sm:justify-start absolute sm:bottom-0">
+        <div className="greet sm:text-left text-left">
+          <h1 className='sm:text-8xl text-5xl'>Hello, I'm Mangesh! </h1>
+          <h1 className='sm:text-8xl text-5xl'>A Student and Geek</h1>
         </div>
+          <h4 className="sm:p-0 text-xl p-2  dark:text-white-200 text-black font-light"><a className="hover-underline-animation" href="#projects">see my works <i className="ph-arrow-right-thin"></i></a></h4>
       </div>
     </div>
   );
 }
+
+
+
+
+
+          // <div className="font-bold  items-centerbe">
+          //   <h1 className="sm:text-8xl  2xl:text-[200px] ">Hi, I am <span style={{ 'background-color': '#a2bed5', 'color': '#121213' }}>Mangesh</span>.</h1>
+          //   <h1 className='sm:text-8xl  2xl:text-[200px] '>A <span>Geek</span> and <span>Explorer</span></h1>
+          // </div>

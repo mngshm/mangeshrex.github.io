@@ -27,7 +27,7 @@ html {
   font-family: 'General';
   scroll-behavior: smooth;
   backdrop-filter: blue(10px);
-  color: #c0c0cf !important;
+  color: #bfc3ca !important;
   background-color: #121213;
 }
 
@@ -88,11 +88,6 @@ span {
   /* color: #a2bed5; */
 }
 
-::selection {
-  color: #121213;
-  background: #9bdead;
-}
-
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -106,7 +101,7 @@ span {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #c0c0cf;
+  background-color: #bfc3ca;
   transform-origin: bottom right;
   transition: transform 0.25s ease-in;
 }
@@ -146,7 +141,7 @@ span {
   height: 2px;
   bottom: 0;
   left: 0;
-  /* background-color: #c0c0cf ; */
+  /* background-color: #bfc3ca ; */
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -155,6 +150,13 @@ span {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.greet { 
+  background: -webkit-linear-gradient(rgb(201, 204, 211), rgb(16, 17, 19));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 .gli {
   font-family: "General";

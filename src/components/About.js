@@ -8,19 +8,17 @@ function About() {
         <div class="sm:text-3xl sm:py-16">
           <h1 class="text-2xl sm:text-4xl px-6 font-bold sm:px-32">About</h1>
           <p class="sm:px-32 px-6 py-6 sm:text-xl ">
-            Hello! I am a 17-year-old front-end web developer and a tech geek from India, currently pursuing a degree in  <span>Computer Engineering</span>.
-            I got interested in technology during the COVID-19 lockdown, when everything was completely shut off, and I
-            developed an interest in computers and <span>Linux</span>.
+            Hello! I am a 17-year-old Geek and Front End Enthusiast, currently pursuing a degree in  <span>Computer Engineering</span>.
+            I believe I am <a href="https://en.wiktionary.org/wiki/wonk">wonk</a> when it comes to Linux and tech. I was never a tech lover before 2020, so I try catching up with latest technologies.
             <br />
             <br />
-            I work with HTML and CSS the most. I have a basic understanding of C/C++ and JS.
+            I am not a professional programmer. But, I manage to code basic stuff in C, Bash and JS and for web development I use ReactJS as my Front-End Framework.
+            
             <br />
-            And I am trying to get efficient at front-end programming with Javascript frameworks.
             <br />
-            <br />
-            Speaking of reading, I am currently reading, <span>"Surely you must be joking, Mr. Richard"</span>. I have
-            completed <span>"The Almanack of Naval Ravikant"</span>. During my spare time, I capture street photographs
-            and portraits. And, from a classical music standpoint, I enjoy playing tabla.
+            I'm a nerd when it comes to reading.I am currently reading, <span>"Kafka on the shore"</span>.
+            I have read books like "Metamorphosis", "Surely you're joking Mr. Richard" and some more books.
+            You can surely drop by your suggestions for books :D
           </p>
         </div>
       </div>

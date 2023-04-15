@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import logo from './asset/ma.png';
+import logo from './asset/m.png';
 import '../App.css';
 import '../darkMode.css';
 import {Sun, Moon} from 'phosphor-react';
@@ -43,13 +43,13 @@ function Navbar() {
                   <>
                     {theme === 'light' &&
                       (
-                        <div className='p-2 bg-blue-600 py-2 rounded-full'>
+                        <div className='p-2 bg-white-600 py-2 rounded-full'>
                           <Moon size={20} weight='fill' onClick={() => setTheme('dark')} />
                         </div>
                       )}
                     {theme === 'dark' &&
                       (
-                        <div className='p-2 bg-blue-600 py-2 dark:bg-blue-700 w-auto rounded-full'>
+                        <div className='p-2 bg-white-600 py-2 dark:bg-blue-700 w-auto rounded-full'>
                           <Sun size={20} weight='fill' onClick={() => setTheme("light")} />
                         </div>
                       )}
@@ -77,13 +77,13 @@ function Navbar() {
               <>
                 {theme === 'light' &&
                   (
-                    <div className='p-2 bg-blue-600 py-2 rounded-full'>
+                    <div className='p-2 bg-black text-white-200 py-2 rounded-full'>
                       <Moon size={20} weight='fill' onClick={() => setTheme('dark')} />
                     </div>
                   )}
                 {theme === 'dark' &&
                   (
-                    <div className='p-2 bg-blue-600 py-2 dark:bg-blue-700 py-2 rounded-full'>
+                    <div className='p-2 bg-white-600 py-2 dark:bg-white-400 dark:text-black rounded-full'>
                       <Sun size={20} weight='fill' onClick={() => setTheme("light")} />
                     </div>
                   )}
