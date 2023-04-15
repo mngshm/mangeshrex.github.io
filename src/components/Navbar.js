@@ -5,7 +5,7 @@ import '../darkMode.css';
 import {Sun, Moon} from 'phosphor-react';
 
 function Navbar() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
   useEffect(() => {
     document.body.className = theme;
   }, [theme]);
