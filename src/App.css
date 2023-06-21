@@ -29,6 +29,7 @@ html {
   backdrop-filter: blue(10px);
   color: #bfc3ca !important;
   background-color: #121213;
+  overflow-x: scroll;
 }
 
 .asset {

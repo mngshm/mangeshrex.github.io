@@ -9,14 +9,17 @@ import React from 'react';
 
 function App() {
   return (
-    <div className='scroll-smooth'>
-      <Navbar />
-      <Welcome />
-      <About />
-      <Projects />
-      <Service />
-      <Footer />
-    </div>
+    <React.Fragment>
+
+      <div className='scroll-smooth'>
+        <Navbar />
+        <Welcome />
+        <About />
+        <Projects />
+        <Service />
+        <Footer />
+      </div>
+    </React.Fragment>
   );
 }
 

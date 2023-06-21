@@ -3,6 +3,8 @@ import '../App.css';
 
 function About() {
   return (
+    <React.Fragment>
+
     <section id='about'>
       <div class="ab-container px-6 py-6 visible h-full sm:min-h-auto">
         <div class="sm:text-3xl sm:py-16">
@@ -23,6 +25,7 @@ function About() {
         </div>
       </div>
     </section>
+    </React.Fragment>
   );
 }
 
