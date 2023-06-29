@@ -1,25 +1,16 @@
-import Navbar from './components/Navbar.js';
-import Welcome from './components/Welcome.js';
-import About from './components/About.js';
-import Projects from './components/Projects.js';
-import Footer from './components/Footer.js';
-import Service from './components/services.js';
+
+import Gallery from './components/gallery.js';
+import Home from './components/Home.js';
 import React from 'react';
-// import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import { createRoot } from 'react-dom/client.js';
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <React.Fragment>
-
-      <div className='scroll-smooth'>
-        <Navbar />
-        <Welcome />
-        <About />
-        <Projects />
-        <Service />
-        <Footer />
-      </div>
-    </React.Fragment>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/gallery" element={<Gallery />} />
+    </Routes>
   );
 }
 

@@ -1,6 +1,5 @@
 import React from 'react';
 import { CaretRight, CaretLeft } from 'phosphor-react';
-import Avatar from '../bruh.jpg';
 
 export default function Footer() {
     return (

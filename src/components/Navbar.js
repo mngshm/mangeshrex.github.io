@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import logo from './asset/m.png';
 import '../App.css';
 import '../darkMode.css';
+import {Link} from 'react-router-dom';
 import {Sun, Moon} from 'phosphor-react';
 
 function Navbar() {
@@ -72,6 +73,9 @@ function Navbar() {
             </li>
             <li>
               <a href="#projects" className="hidden sm:flex py-2 pl-2  hover-underline-animation  rounded md:border-0 ">Projects</a>
+            </li>
+            <li>
+              <Link to="/gallery" className="hidden sm:flex py-2 pl-2  hover-underline-animation  rounded md:border-0 ">Gallery</Link>
             </li>
             <li>
               <>
