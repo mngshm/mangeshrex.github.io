@@ -8,7 +8,7 @@ import Wadawala from './asset/photos/wadawala.jpg';
 import Boy from './asset/photos/boy-walking.png';
 import Kids from './asset/photos/kids-playing.jpg'
 import Street from './asset/photos/street.jpg';
-import Anna from './asset/photos/gali-ka-anna-hazare.jpg';
+import Anna from './asset/photos/anna-hazare.jpg';
 import Uncle from './asset/photos/uncle.jpg';
 
 export default function Gallery() {
