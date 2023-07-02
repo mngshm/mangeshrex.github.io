@@ -18,8 +18,8 @@ function About() {
             
             <br />
             <br />
-            I'm a nerd when it comes to reading.I am currently reading, <span>"Kafka on the shore"</span>.
-            I have read books like "Metamorphosis", "Surely you're joking Mr. Richard" and some more books.
+            I'm a nerd when it comes to reading.I am currently reading, <span>"The Graveyard Book"</span>.
+            I have read books like "kafka on the Shore", "Metamorphosis", "Surely you're joking Mr. Richard" and some more books.
             You can surely drop by your suggestions for books :D
           </p>
         </div>
