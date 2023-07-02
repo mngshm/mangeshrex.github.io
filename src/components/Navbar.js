@@ -41,6 +41,9 @@ function Navbar() {
                   <a href="#projects" className="hidden sm:flex py-2 pl-2  hover-underline-animation  rounded md:border-0 ">Projects</a>
                 </li>
                 <li>
+              <Link to="/gallery" className="hidden sm:flex py-2 pl-2  hover-underline-animation  rounded md:border-0 ">Gallery</Link>
+            </li>
+                <li>
                   <>
                     {theme === 'light' &&
                       (
