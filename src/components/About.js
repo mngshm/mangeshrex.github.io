@@ -7,7 +7,7 @@ function About() {
 
     <section id='about'>
       <div class="ab-container px-6 py-6 visible h-full sm:min-h-auto">
-        <div class="sm:text-3xl sm:py-16">im
+        <div class="sm:text-3xl sm:py-16">
           <h1 class="text-2xl sm:text-4xl px-6 font-bold sm:px-32">About</h1>
           <p class="sm:px-32 px-6 py-6 sm:text-xl ">
             Hello! I am a 17-year-old Geek and Front End Enthusiast, currently pursuing a degree in  <span>Computer Engineering</span>.
