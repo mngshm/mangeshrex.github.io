@@ -2,13 +2,13 @@ import React from "react";
 import Granny from './asset/photos/granny-corns.jpg';
 import Bullet from './asset/photos/bullet-flag.jpg';
 import Girl from './asset/photos/girl.jpg';
-import sunset from './asset/photos/sunset-look.jpg';
+import Sunset from './asset/photos/sunset-look.jpg';
 import Mother from './asset/photos/mother.jpg';
 import Wadawala from './asset/photos/wadawala.jpg';
 import Boy from './asset/photos/boy-walking.png';
 import Kids from './asset/photos/kids-playing.jpg'
 import Street from './asset/photos/street.jpg';
-import Anna from './asset/photos/gali-ka-anna-hazare.jpg'
+import Anna from './asset/photos/gali-ka-anna-hazare.jpg';
 import Uncle from './asset/photos/uncle.jpg';
 
 export default function Gallery() {
@@ -72,7 +72,7 @@ export default function Gallery() {
                             <img
                                 alt="gallery"
                                 className="block h-full w-full rounded-lg object-cover object-center"
-                                src={sunset} />
+                                src={Sunset} />
                         </div>
                     </div>
                     <div className="flex w-1/2 flex-wrap">
