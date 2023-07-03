@@ -20,91 +20,100 @@ export default function Gallery() {
                         <h1 className="text-xl sm:text-4xl">Gallery of my Memories!</h1>
                     </div>
                 </div>
-                <div className="-m-1 flex flex-wrap flex-row md:-m-2">
+                <div className="-m-1 flex flex-wrap flex-col md:flex-row md:-m-2">
                     {/* Wide ones */}
-                    <div className="flex w-1/2 flex-wrap">
+                    <div className="flex flex-wrap w-full md:w-1/2">
                         <div className="w-full p-1 md:p-2">
                             <img
                                 alt="gallery"
                                 className="block h-full w-full rounded-lg object-cover object-center"
-                                src={Mother} />
+                                src={Mother}
+                            />
                         </div>
                         <div className="w-full p-1 md:p-2">
                             <img
                                 alt="gallery"
                                 className="block h-full w-full rounded-lg object-cover object-center"
-                                src={Girl} />
+                                src={Girl}
+                            />
                         </div>
                     </div>
 
                     {/* Portraits */}
-                    <div className="flex w-1/2 flex-wrap">
+                    <div className="flex flex-wrap w-full md:w-1/2">
                         <div className="w-full p-1 md:p-2">
                             <img
                                 alt="gallery"
                                 className="block h-full w-full rounded-lg object-cover object-center"
-                                src={Street} />
+                                src={Street}
+                            />
                         </div>
                         <div className="w-full p-1 md:p-2">
                             <img
                                 alt="gallery"
                                 className="block h-full w-full rounded-lg object-cover object-center"
-                                src={Uncle} />
+                                src={Uncle}
+                            />
                         </div>
                     </div>
-                    <div className="flex w-full flex-wrap">
-                        <div className="w-full p-2 md:p-2">
+                    <div className="w-full p-2 md:p-2">
+                        <img
+                            alt="gallery"
+                            className="block h-full w-full rounded-lg object-cover object-center"
+                            src={Anna}
+                        />
+                    </div>
+                    <div className="flex flex-wrap md:-m-2">
+                        <div className="w-full md:w-1/2 p-1 md:p-2">
                             <img
                                 alt="gallery"
                                 className="block h-full w-full rounded-lg object-cover object-center"
-                                src={Anna} />
+                                src={Kids}
+                            />
+                        </div>
+                        <div className="w-full md:w-1/2 p-1 md:p-2">
+                            <img
+                                alt="gallery"
+                                className="block h-full w-full rounded-lg object-cover object-center"
+                                src={Sunset}
+                            />
                         </div>
                     </div>
-                    <div className="
-                     flex flex-wrap flex-row md:-m-2">
-                        <div className="w-1/2 p-1 md:p-2">
-                            <img
-                                alt="gallery"
-                                className="block h-full w-full rounded-lg object-cover object-center"
-                                src={Kids} />
-                        </div>
-                        <div className="w-1/2 p-1 md:p-2">
-                            <img
-                                alt="gallery"
-                                className="block h-full w-full rounded-lg object-cover object-center"
-                                src={Sunset} />
-                        </div>
-                    </div>
-                    <div className="flex w-1/2 flex-wrap">
+                    <div className="flex flex-wrap w-full md:w-1/2">
                         <div className="w-full p-1 md:p-2">
                             <img
                                 alt="gallery"
                                 className="block h-full w-full rounded-lg object-cover object-center"
-                                src={Boy} />
+                                src={Boy}
+                            />
                         </div>
                         <div className="w-full p-1 md:p-2">
                             <img
                                 alt="gallery"
                                 className="block h-full w-full rounded-lg object-cover object-center"
-                                src={Bullet} />
+                                src={Bullet}
+                            />
                         </div>
 
                         <div className="w-full p-1 md:p-2">
                             <img
                                 alt="gallery"
                                 className="block h-full w-full rounded-lg object-cover object-center"
-                                src={Wadawala} />
+                                src={Wadawala}
+                            />
                         </div>
                     </div>
-                    <div className="flex w-1/2 flex-wrap">
+                    <div className="flex flex-wrap w-full md:w-1/2">
                         <div className="w-full p-1 md:p-2">
                             <img
                                 alt="gallery"
                                 className="block h-full w-full rounded-lg object-cover object-center"
-                                src={Granny} />
+                                src={Granny}
+                            />
                         </div>
                     </div>
                 </div>
-            </div></>
+            </div>
+        </>
     );
 }
