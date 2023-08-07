@@ -35,7 +35,7 @@ function Navbar() {
                   <a href="#about" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded md:border-0 ">About</a>
                 </li>
                 <li>
-                  <a href="https://blog.mangeshrex.tech" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded md:border-0 ">Blog</a>
+                  <a href="https://blog.mangesh.xyz" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded md:border-0 ">Blog</a>
                 </li>
                 <li>
                   <a href="#projects" className="hidden sm:flex py-2 pl-2  hover-underline-animation  rounded md:border-0 ">Projects</a>
@@ -72,7 +72,7 @@ function Navbar() {
               <a href="#about" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded md:border-0 ">About</a>
             </li>
             <li>
-              <a href="https://blog.mangeshrex.tech" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded md:border-0 ">Blog</a>
+              <a href="https://blog.mangesh.xyz" className="hidden sm:flex py-2 pl-2 hover-underline-animation  rounded md:border-0 ">Blog</a>
             </li>
             <li>
               <a href="#projects" className="hidden sm:flex py-2 pl-2  hover-underline-animation  rounded md:border-0 ">Projects</a>
